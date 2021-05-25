@@ -145,6 +145,7 @@ html:not(.material-style) .material-style-only {
 
 .smartfit-bg{
   position: absolute !important;
+  left:50px;
 }
 
 .layout-example-block {
