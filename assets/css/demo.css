@@ -143,6 +143,10 @@ html:not(.material-style) .material-style-only {
  * Layouts
  */
 
+.smartfit-bg{
+  position: absolute !important;
+}
+
 .layout-example-block {
   margin-top: 10px;
   padding: 10px;
