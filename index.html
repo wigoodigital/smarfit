@@ -8,10 +8,11 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
+
 
   <!-- Icon fonts -->
   <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css">
@@ -28,10 +29,11 @@
   <link rel="stylesheet" href="assets/vendor/css/rtl/uikit.css">
   <link rel="stylesheet" href="assets/css/demo.css">
   <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/gotham.css">
 
   <!-- Load polyfills -->
   <script src="assets/vendor/js/polyfills.js"></script>
-  <script>document['documentMode']===10&&document.write('<script src="https://polyfill.io/v3/polyfill.min.js?features=Intl.~locale.en"><\/script>')</script>
+  <script>document['documentMode'] === 10 && document.write('<script src="https://polyfill.io/v3/polyfill.min.js?features=Intl.~locale.en"><\/script>')</script>
 
   <script src="assets/vendor/js/material-ripple.js"></script>
   <script src="assets/vendor/js/layout-helpers.js"></script>
@@ -55,12 +57,11 @@
   <link rel="stylesheet" href="assets/vendor/libs/swiper/swiper.css">
 
   <style>
-
     .swiper-container .swiper-slide {
-        padding: 5rem 0;
-        text-align: center;
-        font-size: 1.5rem;
-        background: #ecebed;
+      padding: 5rem 0;
+      text-align: center;
+      font-size: 1.5rem;
+      background: #ecebed;
     }
   </style>
 
@@ -77,35 +78,40 @@
 
       <!-- Layout container -->
       <div class="layout-container">
-        
-        <!-- Layout navbar -->        
-        <nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white container-p-x" id="layout-navbar">
+
+        <!-- Layout navbar -->
+        <nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-transparent container-p-x "
+          id="layout-navbar" style='border:0 !important;box-shadow: none !important;'>
           <div class="container">
-        
-            <a href="#" class="navbar-brand w-lg-100 text-large font-weight-bolder line-height-1 py-3 mr-0">Brand</a>
-        
+
+            <a href="#" class="navbar-brand w-lg-100 text-large font-weight-bolder line-height-1 py-3 mr-0">
+
+              <img class='brand-img' src='./assets/img/logo.svg'>
+
+            </a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".header-13">
               <span class="navbar-toggler-icon"></span>
             </button>
-        
+
             <div class="header-13 navbar-collapse collapse flex-shrink-0">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home</a>
-                <a class="nav-item nav-link" href="#">Features</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link" href="#">About&nbsp;Us</a>
+                <a class="nav-item nav-link active" href="#">CONHEÇA A SMART FIT</a>
+                <a class="nav-item nav-link" href="#">BAIXAR APLICATIVO</a>
+                <a class="nav-item nav-link" href="#">COVID-19</a>
+                <a class="nav-item nav-link" href="#">DUVIDAS FREQUENTES</a>
               </div>
             </div>
-        
-            <div class="header-13 navbar-collapse collapse justify-content-lg-end w-lg-100">
+
+            <!-- <div class="header-13 navbar-collapse collapse justify-content-lg-end w-lg-100">
               <div class="nav navbar-nav align-items-lg-center">
                 <a class="nav-item nav-link" href="#">
                   Get in Touch
                 </a>
                 <a href="#" class="btn btn-primary px-3 ml-lg-4">Join Us</a>
               </div>
-            </div>
-        
+            </div> -->
+
           </div>
         </nav>
         <!-- / Layout navbar -->
@@ -113,14 +119,25 @@
         <!-- Layout content -->
         <div class="layout-content">
 
-          <div class="jumbotron ui-hero" style="height: 350px">
+          <div class="jumbotron ui-hero bg-white">
             <div class="container-fluid">
               <div class="row">
-                <div class="col">Hero content</div>
+                <div class='col-6'>
+                  <div class='d-flex flex-1 flex-row'>
+                    <img src='./assets/img/smartfit-bg.png'>
+                    <div class='d-flex flex-1 flex-column justify-content-center align-items-center'>
+                      <h1 class='p-5'>Bem-vindo(a) à</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class='col-6'>
+                  <img src='./assets/img/smartfit-banner.png'>
+
+                </div>
               </div>
             </div>
           </div>
-          
+
           <!-- Content -->
           <div class="container-fluid flex-grow-1 container-p-y">
 
@@ -140,13 +157,14 @@
                   </select>
                   <input type="text" class="form-control" placeholder="Search for...">
                   <span class="input-group-append">
-                    <button type="button" class="btn btn-primary"><span class="ion ion-ios-search"></span> Search</button>
+                    <button type="button" class="btn btn-primary"><span class="ion ion-ios-search"></span>
+                      Search</button>
                   </span>
                 </div>
               </div>
             </div>
 
-            
+
 
             <div class="row mt-4">
               <div class="col-lg-4 col-xl-3">
@@ -202,7 +220,8 @@
                 </h4>
 
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-1" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-1" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Ne ornatus albucius ius?
                     <span class="collapse-icon"></span>
                   </a>
@@ -211,7 +230,8 @@
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-2" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-2" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Quo insolens intellegam dissentiet at?
                     <span class="collapse-icon"></span>
                   </a>
@@ -220,7 +240,8 @@
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-3" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-3" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Ad his assum delenit blandit?
                     <span class="collapse-icon"></span>
                   </a>
@@ -229,16 +250,19 @@
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-4" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-4" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Dapibus ac facilisis in?
                     <span class="collapse-icon d-inline-block ml-1"></span>
                   </a>
                   <div id="company-faq-4" class="collapse text-muted">
-                    <div class="px-4 pb-3">Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod consequat eu.</div>
+                    <div class="px-4 pb-3">Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod
+                      consequat eu.</div>
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-5" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-5" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Cras justo odio?
                     <span class="collapse-icon d-inline-block ml-1"></span>
                   </a>
@@ -247,7 +271,8 @@
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-6" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-6" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Porta ac consectetur ac?
                     <span class="collapse-icon d-inline-block ml-1"></span>
                   </a>
@@ -267,7 +292,8 @@
                 </h4>
 
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-21" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-21" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Ne ornatus albucius ius?
                     <span class="collapse-icon"></span>
                   </a>
@@ -276,7 +302,8 @@
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-22" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-22" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Quo insolens intellegam dissentiet at?
                     <span class="collapse-icon"></span>
                   </a>
@@ -285,7 +312,8 @@
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-23" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-23" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Ad his assum delenit blandit?
                     <span class="collapse-icon"></span>
                   </a>
@@ -294,16 +322,19 @@
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-24" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-24" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Dapibus ac facilisis in?
                     <span class="collapse-icon d-inline-block ml-1"></span>
                   </a>
                   <div id="company-faq-24" class="collapse text-muted">
-                    <div class="px-4 pb-3">Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod consequat eu.</div>
+                    <div class="px-4 pb-3">Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod
+                      consequat eu.</div>
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-25" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-25" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Cras justo odio?
                     <span class="collapse-icon d-inline-block ml-1"></span>
                   </a>
@@ -312,7 +343,8 @@
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-26" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-26" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Porta ac consectetur ac?
                     <span class="collapse-icon d-inline-block ml-1"></span>
                   </a>
@@ -332,7 +364,8 @@
                 </h4>
 
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-31" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-31" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Ne ornatus albucius ius?
                     <span class="collapse-icon"></span>
                   </a>
@@ -341,7 +374,8 @@
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-32" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-32" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Quo insolens intellegam dissentiet at?
                     <span class="collapse-icon"></span>
                   </a>
@@ -350,7 +384,8 @@
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-33" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-33" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Ad his assum delenit blandit?
                     <span class="collapse-icon"></span>
                   </a>
@@ -359,16 +394,19 @@
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-34" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-34" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Dapibus ac facilisis in?
                     <span class="collapse-icon d-inline-block ml-1"></span>
                   </a>
                   <div id="company-faq-34" class="collapse text-muted">
-                    <div class="px-4 pb-3">Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod consequat eu.</div>
+                    <div class="px-4 pb-3">Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod
+                      consequat eu.</div>
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-35" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-35" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Cras justo odio?
                     <span class="collapse-icon d-inline-block ml-1"></span>
                   </a>
@@ -377,7 +415,8 @@
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-36" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-36" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Porta ac consectetur ac?
                     <span class="collapse-icon d-inline-block ml-1"></span>
                   </a>
@@ -397,7 +436,8 @@
                 </h4>
 
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-41" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-41" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Ne ornatus albucius ius?
                     <span class="collapse-icon"></span>
                   </a>
@@ -406,7 +446,8 @@
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-42" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-42" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Quo insolens intellegam dissentiet at?
                     <span class="collapse-icon"></span>
                   </a>
@@ -415,7 +456,8 @@
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-43" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-43" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Ad his assum delenit blandit?
                     <span class="collapse-icon"></span>
                   </a>
@@ -424,16 +466,19 @@
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-44" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-44" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Dapibus ac facilisis in?
                     <span class="collapse-icon d-inline-block ml-1"></span>
                   </a>
                   <div id="company-faq-44" class="collapse text-muted">
-                    <div class="px-4 pb-3">Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod consequat eu.</div>
+                    <div class="px-4 pb-3">Lorem ipsum dolor sit amet, ius virtute suscipit te. Ius prima euismod
+                      consequat eu.</div>
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-45" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-45" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Cras justo odio?
                     <span class="collapse-icon d-inline-block ml-1"></span>
                   </a>
@@ -442,7 +487,8 @@
                   </div>
                 </div>
                 <div class="theme-bg-white ui-bordered mb-2">
-                  <a href="#company-faq-46" class="d-flex justify-content-between text-body py-3 px-4" data-toggle="collapse">
+                  <a href="#company-faq-46" class="d-flex justify-content-between text-body py-3 px-4"
+                    data-toggle="collapse">
                     Porta ac consectetur ac?
                     <span class="collapse-icon d-inline-block ml-1"></span>
                   </a>
@@ -494,9 +540,9 @@
                   efficiendi.
                 </div>
               </div>
-              
+
               <div class="row text-center m-auto">
-                <div class="col-sm-6 col-lg-4 p-4">                  
+                <div class="col-sm-6 col-lg-4 p-4">
                   <div class="ion ion-ios-help-buoy ui-w-30 text-center text-xlarge mb-4"></div>
                   <h5 class="font-weight-bold mb-2">Mike Greene</h5>
                   <div class="text-muted small">Creative director</div>
@@ -545,7 +591,7 @@
                   inimicus an, his ne liber aeterno debitis. Te his iudico tollit
                   efficiendi.
                 </div>
-              
+
                 <a href="#" class="btn btn-lg btn-dark text-transform-none text-left m-3">
                   <span class="media align-items-center">
                     <span class="ion ion-logo-apple d-block" style="font-size: 40px"></span>
@@ -555,10 +601,11 @@
                     </span>
                   </span>
                 </a>
-              
+
                 <a href="#" class="btn btn-lg btn-dark text-transform-none text-left m-3">
                   <span class="media align-items-center">
-                    <img width="25" class="d-block" alt src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAoCAYAAABw65OnAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWJJREFUeNrE2OENgjAQBWB0AkZwBEZwBDfRDWQD3UA30A10BJ1ANmidoF4Tm5Cmvd7Vu9rkxQj8+AI8KO2ccx1kgEyQ7fd/0wRA+LWQ22xbM4RJQPzYt0Q4BPKCrFshMIgfB0jfAlGC+H2bFogSxI8LZKWNoECMZJ1zCArESdUZQ1Ahoc69FoIDqa4zBcGB+HHinhUqggth1ZmD4ELCjbuSRnAhltKeGgQVYqNjsnWuRZQgMcBgdf4FkYNggGSdf0WkICWAi97OIogYQgWEMSw7mbEgbksPgbNgkctReo4cJS5H6iak1HeSujGxFmCQUaqilBrGkLvkw8oyamgoj21uO96QNeQBGSA3SI8c/4RYyXZwzoDVeJVzAGeNSQ0VMGlN76iAUWu2TQHcNaf8JYDfv9P8+CkBrtqfgRiAVbtaBAY4tlgayAGqa8dF5ACj+9PCmZGqHRcxX0LcuT8sIX4EGACCwMmlMqgohQAAAABJRU5ErkJggg==">
+                    <img width="25" class="d-block" alt
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAoCAYAAABw65OnAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWJJREFUeNrE2OENgjAQBWB0AkZwBEZwBDfRDWQD3UA30A10BJ1ANmidoF4Tm5Cmvd7Vu9rkxQj8+AI8KO2ccx1kgEyQ7fd/0wRA+LWQ22xbM4RJQPzYt0Q4BPKCrFshMIgfB0jfAlGC+H2bFogSxI8LZKWNoECMZJ1zCArESdUZQ1Ahoc69FoIDqa4zBcGB+HHinhUqggth1ZmD4ELCjbuSRnAhltKeGgQVYqNjsnWuRZQgMcBgdf4FkYNggGSdf0WkICWAi97OIogYQgWEMSw7mbEgbksPgbNgkctReo4cJS5H6iak1HeSujGxFmCQUaqilBrGkLvkw8oyamgoj21uO96QNeQBGSA3SI8c/4RYyXZwzoDVeJVzAGeNSQ0VMGlN76iAUWu2TQHcNaf8JYDfv9P8+CkBrtqfgRiAVbtaBAY4tlgayAGqa8dF5ACj+9PCmZGqHRcxX0LcuT8sIX4EGACCwMmlMqgohQAAAABJRU5ErkJggg==">
                     <span class="media-body d-block flex-basis-auto ml-3">
                       <small class="font-weight-light">GET IT ON</small><br>
                       <strong class="text-big line-height-1">Google Play</strong>
@@ -566,7 +613,7 @@
                   </span>
                 </a>
               </div>
-              
+
             </div>
 
           </div>
@@ -607,7 +654,7 @@
   <script src="assets/vendor/js/sidenav.js"></script>
 
   <!-- Libs -->
-  <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>  
+  <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
   <script src="assets/vendor/libs/swiper/swiper.js"></script>
 
   <!-- Demo -->
