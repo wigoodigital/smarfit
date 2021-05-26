@@ -57,16 +57,24 @@
   <link rel="stylesheet" href="assets/vendor/libs/swiper/swiper.css">
 
   <style>
-    .swiper-container .swiper-slide {
+    /* .swiper-container .swiper-slide {
       padding: 5rem 0;
       text-align: center;
       font-size: 1.5rem;
       background: #ecebed;
+    } */
+
+    .swiper-pagination-bullet-active{
+      background: #202020 !important;
     }
 
     .nav-link {
       font-weight: 500;
       color: #202020
+    }
+
+    body {
+      overflow-x: hidden;
     }
   </style>
 
@@ -101,7 +109,7 @@
 
             <div class="header-13 navbar-collapse collapse flex-shrink-0">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active-line" href="#">CONHEÇA A SMART FIT</a>
+                <a class="nav-item nav-link active-line active" href="#">CONHEÇA A SMART FIT</a>
                 <a class="nav-item nav-link" href="#">BAIXAR APLICATIVO</a>
                 <a class="nav-item nav-link" href="#">COVID-19</a>
                 <a class="nav-item nav-link" href="#">DUVIDAS FREQUENTES</a>
@@ -123,44 +131,54 @@
 
         <!-- Layout content -->
         <div class="layout-content bg-white">
+          <section>
+            <img class='smartfit-bg' src='./assets/img/smartfit-bg.png'>
+            <div class='container'>
+              <div class="d-flex flex-1 flex-row  flex-wrap-reverse justify-content-center align-items-center"
+                style='min-height:90vh;'>
+                <div class='col-12 col-lg-6 d-block'>
+                  <div class='d-flex flex-1 flex-column p-0 m-0 justify-content-center text-center align-items-center'>
 
 
-          <div class='container'>
-            <div class="d-flex flex-1 flex-row" style='height:90vh;'>
-              <div class='col-12 col-lg-6'>
-                <div class='d-flex flex-1 flex-row width-100 justify-content-center text-center align-items-center'>
-                  <img class='smartfit-bg' src='./assets/img/smartfit-bg.png'>
-                  <div
-                    class='d-flex flex-1 flex-column justify-content-center text-center align-items-center pt-4 pb-4'>
-                    <h1 class='p-5'>Bem-vindo(a) à</h1>
+                    <h2 class='text-color'>Bem-vindo(a) à</h2>
 
 
-                    <img src='./assets/video/' />
+                    <img width='95%' class='mt-5 mb-5' src='./assets/img/logo.svg'>
+
+                    <div class='btn-faq-container'>
+                      <a class='btn-faq' href='#'><span>TIRE SUAS DÚVIDAS</span></a>
+                    </div>
 
                   </div>
+
                 </div>
-              </div>
-              <div class='col-12 col-lg-6 d-lg-flex d-none'>
-                <div class='d-flex flex-1 flex-row justify-content-end align-items-start'>
-                  <img width='100% ' class='pt-5 pb-5' src='./assets/img/smartfit-banner.png'>
+                <div class='col-12 col-lg-6 d-lg-block d-none'>
+                  <div class='d-flex flex-1 flex-column justify-content-center align-items-center'>
+                    <img width='95%' src='./assets/img/smartfit-banner.png'>
+                  </div>
                 </div>
-              </div>
 
 
+
+              </div>
             </div>
-          </div>
+
+          </section>
           <!-- Content -->
           <section class='container'>
             <div class='d-flex flex-1 flex-row flex-wrap justify-content-center align-items-center'>
-              <div class='col-12 col-md-6'>
-                <div class='d-flex flex-1 flex-column flex-wrap justify-content-center align-items-center'>
-                <h2>Baixe o app e comece a treinar agora!</h2>
-                <img width='100%' src='./assets/img/smartphone.png'>
-
+              <div class='col-12 col-md-6 '>
+                <div class='d-flex flex-1 flex-column flex-wrap justify-content-center align-items-center mb-0 mb-sm-5'>
+                  <h2>Baixe o app e comece a treinar agora!</h2>
+                  <img width='100%' src='./assets/img/smartphone.png'>
+                  <div class='d-flex flex-1 flex-row justify-content-between align-items-center'>
+                    <a href='#'><img width='90%' src='./assets/img/GooglePlay.png'></a>
+                    <a href='#'><img width='92%' src='./assets/img/AppStore.png'></a>
+                  </div>
+                </div>
               </div>
-              </div>
-              <div class='col-12 col-md-6'>
-                <div class='box-app-download p-5'>
+              <div class='col-12 col-md-6 '>
+                <div class='box-app-download p-5 '>
                   <h4 class='active-line-effect'>E mais! Uma experiência completa
                     para você cuidar da sua saúde onde quiser.
                   </h4>
@@ -548,11 +566,38 @@
               <!-- Multiple slides -->
               <div class="swiper-container" id="swiper-multiple-slides">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  <div class="swiper-slide">Slide 4</div>
-                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide"><div class='card-covid'>
+                    <h5>Desinfecção Completa</h5>
+                    <p>Desinfectamos todas as academias com aparelho nebulizador de 2 a 3 vezes por dia.</p>
+                  </div></div>
+                  <div class="swiper-slide"><div class='card-covid'>
+                    <h5>Distância entre Aparelhos</h5>
+                    <p>Desativamos metade dos aparelhos de cardio para manter uma distância segura entre os clientes.</p>
+                  </div></div>
+                  <div class="swiper-slide"><div class='card-covid'>
+                    <h5>Agende seu Horário</h5>
+                    <p>Vamos evitar aglomeração. Antes de ir à academia agende seu horário aqui.</p>
+                  </div></div>
+                  <div class="swiper-slide"><div class='card-covid'>
+                    <h5>Desinfecção Completa</h5>
+                    <p>Desinfectamos todas as academias com aparelho nebulizador de 2 a 3 vezes por dia.</p>
+                  </div></div>
+                  <div class="swiper-slide"><div class='card-covid'>
+                    <h5>Desinfecção Completa</h5>
+                    <p>Desinfectamos todas as academias com aparelho nebulizador de 2 a 3 vezes por dia.</p>
+                  </div></div>
+                  <div class="swiper-slide"><div class='card-covid'>
+                    <h5>Desinfecção Completa</h5>
+                    <p>Desinfectamos todas as academias com aparelho nebulizador de 2 a 3 vezes por dia.</p>
+                  </div></div>
+                  <div class="swiper-slide"><div class='card-covid'>
+                    <h5>Desinfecção Completa</h5>
+                    <p>Desinfectamos todas as academias com aparelho nebulizador de 2 a 3 vezes por dia.</p>
+                  </div></div>
+                  <div class="swiper-slide"><div class='card-covid'>
+                    <h5>Desinfecção Completa</h5>
+                    <p>Desinfectamos todas as academias com aparelho nebulizador de 2 a 3 vezes por dia.</p>
+                  </div></div>
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
