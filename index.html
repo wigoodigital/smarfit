@@ -111,9 +111,9 @@
             <div class="header-13 navbar-collapse collapse flex-shrink-0">
               <div class="navbar-nav">
                 <a class="nav-item nav-link active-line active" href="#">CONHEÇA A SMART FIT</a>
-                <a class="nav-item nav-link" href="#">BAIXAR APLICATIVO</a>
-                <a class="nav-item nav-link" href="#">COVID-19</a>
-                <a class="nav-item nav-link" href="#">DUVIDAS FREQUENTES</a>
+                <a class="nav-item nav-link" href="#App">BAIXAR APLICATIVO</a>
+                <a class="nav-item nav-link" href="#Covid">COVID-19</a>
+                <a class="nav-item nav-link" href="#Duvidas">DUVIDAS FREQUENTES</a>
               </div>
             </div>
 
@@ -147,7 +147,7 @@
                     <img width='95%' class='mt-5 mb-5' src='./assets/img/logo.svg'>
 
                     <div class='btn-faq-container'>
-                      <a class='btn-faq' href='#'><span>TIRE SUAS DÚVIDAS</span></a>
+                      <a class='btn-faq' href='#Duvidas'><span>TIRE SUAS DÚVIDAS</span></a>
                     </div>
 
                   </div>
@@ -166,7 +166,7 @@
 
           </section>
           <!-- Content -->
-          <section class='container'>
+          <section class='container' id="App">
             <div class='d-flex flex-1 flex-row flex-wrap justify-content-center align-items-center'>
               <div class='col-12 col-md-6 '>
                 <div class='d-flex flex-1 flex-column flex-wrap justify-content-center align-items-center mb-0 mb-sm-5'>
@@ -186,12 +186,12 @@
                   <p class='pt-5'><strong>Treinos online, consultoria com professores e nutricionistas</strong> via
                     videochamada, além de mais de <strong>900 unidades</strong> na América Latina!</p>
                 </div>
+
               </div>
-            </div>
           </section>
 
 
-          <div class="container flex-grow-1 container-p-y">
+          <div class="container flex-grow-1 container-p-y" id="Duvidas">
 
 
             <h1 class="text-center font-weight-bold py-3 mb-4">
@@ -553,7 +553,7 @@
             <!-- Recursos -->
 
 
-            <div class="row mt-4 padding-default">
+            <div class="row mt-4 padding-default" id="Covid">
 
 
               <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
@@ -720,8 +720,9 @@
 
 
                   <div class="form-group">
-                    <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Mensagem"
-                      style="border: 1px solid #D1D1D1; padding: 10px; border-radius: 0px;padding: 15px"></textarea>
+                    <textarea draggable="false" name="" id="" cols="30" rows="7" class="form-control"
+                      placeholder="Mensagem"
+                      style="border: 1px solid #D1D1D1; padding: 10px; border-radius: 0px;padding: 15px; resize: none;"></textarea>
                   </div>
 
 
