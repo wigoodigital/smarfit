@@ -4455,13 +4455,13 @@ button.list-group-item-dark.active {
   z-index: 1030;
 }
 .navbar.navbar-dark {
-  color: rgba(255, 255, 255, 0.8);
+  color: #FFF;
 }
 .navbar-dark .navbar-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.4) !important;
 }
 .navbar.navbar-light {
-  color: rgba(24, 28, 33, 0.4);
+  color: #202020;
 }
 .navbar-light .navbar-nav .nav-link.disabled {
   color: rgba(24, 28, 33, 0.2) !important;
