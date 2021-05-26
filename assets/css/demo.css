@@ -94,6 +94,21 @@
 
 .nav-item{
   font-weight:500 !important;
+  color:#2f3238 !important;
+}
+
+
+
+.active-line::before{
+  position:relative;
+  content: "";
+  top:30px;
+  left:0px;
+  background-color:#FBBA00;
+  width:100%;
+  height:3px;
+  display:flex;
+  z-index:1px;
 }
 
 /* *****************************************************************************
