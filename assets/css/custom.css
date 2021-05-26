@@ -73,21 +73,42 @@
 
 .smartfit-bg {
   position: absolute !important;
-  left: 50px;
+  left: -60px;
+  top:80px;
 }
 
 .brand-img {
   width: 135px;
 }
 
-.active-line::before {
+.active-line::after {
   position: relative;
   content: "";
-  top: 30px;
+  top: 7px;
   left: 0px;
   background-color: #fbba00;
   width: 100%;
   height: 3px;
   display: flex;
   z-index: 1px;
+}
+
+.active-line-effect::after {
+  position: relative;
+  content: "";
+  top: 25px;
+  left: 0px;
+  background-color: #fbba00;
+  width: 50%;
+  height: 3px;
+  display: flex;
+  z-index: 1px;
+}
+
+
+.box-app-download{
+  display:flex;
+  flex:1;
+  border:3px solid #fbba00;
+  flex-direction: column;
 }
