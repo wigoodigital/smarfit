@@ -131,12 +131,72 @@ html {
   z-index: 1px;
 }
 
+.card-smartfit-cta{
+  background:#FFF;
+  border:2px solid #f1f1f1;
+  min-height:300px;
+}
+.card-smartfit-cta img{
+  width:100%;
+}
+
+
+.card-smartfit-cta .cta-mark{
+  font-weight: 500;
+  color:#202020;
+  width:85%;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size:1em;
+  text-align: center;
+  align-self: flex-end;
+  display:block;
+  margin-top:-40px;
+  background-color:#fbba00;
+}
+.card-smartfit-cta .smartfit-card-title{
+  font-weight: 500;
+  color:#FFF;
+  width:100%;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size:1.25em;
+  text-align: center;
+  background-color:#202020;
+}
+
 .box-app-download {
+  display: flex;
+  flex: 1;
+
+  /* border: 3px solid #fbba00; */
+  flex-direction: column;
+  /* max-height:400px; */
+}
+
+.box-app-download:after {
   display: flex;
   flex: 1;
   border: 3px solid #fbba00;
   flex-direction: column;
+  content:"";
+  width:100%;
+  left:0;
+  top:0;
+  position: absolute;
+  height:440px;
 }
+
+
+
+.btn-cta{
+  background:#fbba00 !important;
+  font-weight: 500 !important;
+  color:#202020 !important;
+
+}
+
+
 
 .btn-faq {
   background: #202020 !important;
