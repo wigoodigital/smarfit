@@ -51,7 +51,7 @@
 
   <style>
     .swiper-smartfit {
-      width: 120%;
+      width: 100%;
     }
 
     .swiper-smartfit .swiper-slide {
@@ -71,6 +71,9 @@
       overflow-x: hidden;
 
     }
+
+
+
 
     .card-covid h5,
     .card-covid p {
@@ -94,8 +97,7 @@
 
         <!-- Layout navbar -->
         <nav class="layout-navbar wow fadeInDown navbar navbar-expand-lg align-items-lg-center bg-white container-p-x "
-        data-wow-duration='0.5s'
-          id="layout-navbar" style='border:0 !important;box-shadow: none !important;'>
+          data-wow-duration='0.5s' id="layout-navbar" style='border:0 !important;box-shadow: none !important;'>
           <div class="container">
 
             <a href="#" class="navbar-brand w-lg-100 text-large font-weight-bolder line-height-1 py-3 mr-0">
@@ -115,7 +117,7 @@
                 <a class="nav-item nav-link" href="#Covid">COVID-19</a>
                 <a class="nav-item nav-link" href="#Duvidas">DUVIDAS FREQUENTES</a>
               </div>
-            </div>            
+            </div>
 
           </div>
         </nav>
@@ -126,7 +128,8 @@
 
           <!-- Banner Principal -->
           <section>
-            <img class='smartfit-bg wow fadeInLeft d-none d-sm-block' data-wow-duration='1s' src='./assets/img/smartfit-bg.png'>
+            <img class='smartfit-bg wow fadeInLeft d-none d-sm-block' data-wow-duration='1s'
+              src='./assets/img/smartfit-bg.png'>
             <div class='container wow fadeIn' data-wow-duration='1s'>
               <div class="d-flex flex-1 flex-row  flex-wrap-reverse justify-content-center align-items-center"
                 style='min-height:90vh;'>
@@ -161,9 +164,9 @@
           </section>
 
           <!-- Baixe o App -->
-          <section class='container '  style='min-height:85vh;' id="App">
+          <section class='container ' style='min-height:85vh;' id="App">
             <div class='d-flex flex-1 flex-row flex-wrap justify-content-center align-items-center'>
-              <div class='col-12 col-md-6 wow fadeInLeft'  data-wow-duration="0.5s">
+              <div class='col-12 col-md-6 wow fadeInLeft' data-wow-duration="0.5s">
                 <div class='d-flex flex-1 flex-column flex-wrap justify-content-center align-items-center mb-0 mb-sm-5'>
                   <h2>Baixe o app e comece a treinar agora!</h2>
                   <img width='100%' class='wow fadeInLeft' data-wow-duration="0.5s" src='./assets/img/smartphone.png'>
@@ -173,7 +176,7 @@
                   </div>
                 </div>
               </div>
-              <div class='col-12 col-md-6 ' >
+              <div class='col-12 col-md-6 '>
                 <div class='box-app-download p-5'>
                   <h4 class='active-line-effect wow fadeInRight' data-wow-duration="1s">E mais! Uma experiência completa
                     para você cuidar da sua saúde onde quiser.
@@ -251,6 +254,26 @@
                         </div>
 
 
+
+                      </div>
+                      <div class="swiper-button-prev button-prev">
+                        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle r="27" transform="matrix(-1 0 0 1 27 27)" fill="#202020" />
+                          <path d="M26.4375 20.25L19.6875 27L26.4375 33.75" stroke="#FFF" stroke-width="2.25"
+                            stroke-miterlimit="10" stroke-linecap="square" />
+                          <path d="M20.625 27.0005H34.3125" stroke="#FFF" stroke-width="2.25" stroke-miterlimit="10"
+                            stroke-linecap="square" />
+                        </svg>
+
+                      </div>
+                      <div class="swiper-button-next button-next">
+                        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="27" cy="27" r="27" fill="#202020" />
+                          <path d="M27.5625 20.25L34.3125 27L27.5625 33.75" stroke="#FFF" stroke-width="2.25"
+                            stroke-miterlimit="10" stroke-linecap="square" />
+                          <path d="M33.375 27.0005H19.6875" stroke="#FFF" stroke-width="2.25" stroke-miterlimit="10"
+                            stroke-linecap="square" />
+                        </svg>
 
                       </div>
                     </div>
@@ -683,6 +706,28 @@
                   </div>
 
                 </div>
+                <div class="swiper-button-prev button-prev">
+                  <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle r="27" transform="matrix(-1 0 0 1 27 27)" fill="#FFF" />
+                    <path d="M26.4375 20.25L19.6875 27L26.4375 33.75" stroke="#202020" stroke-width="2.25"
+                      stroke-miterlimit="10" stroke-linecap="square" />
+                    <path d="M20.625 27.0005H34.3125" stroke="#202020" stroke-width="2.25" stroke-miterlimit="10"
+                      stroke-linecap="square" />
+                  </svg>
+                </div>
+                <div class="swiper-button-next button-next">
+
+
+                  <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="27" cy="27" r="27" fill="#FFF" />
+                    <path d="M27.5625 20.25L34.3125 27L27.5625 33.75" stroke="#202020" stroke-width="2.25"
+                      stroke-miterlimit="10" stroke-linecap="square" />
+                    <path d="M33.375 27.0005H19.6875" stroke="#202020" stroke-width="2.25" stroke-miterlimit="10"
+                      stroke-linecap="square" />
+                  </svg>
+
+
+                </div>
                 <div class="swiper-pagination"></div>
               </div>
 
@@ -727,7 +772,9 @@
                     <span class="input-group-append">
                       <a role="button"
                         href="https://smartfitnews.smartfit.com.br/academia/o-que-a-smart-fit-esta-fazendo-para-evitar-a-covid-19"
-                        target="_blank" class="btn btn-primary btn-know-more d-flex justify-content-center align-items-center">Saiba mais</a>
+                        target="_blank"
+                        class="btn btn-primary btn-know-more d-flex justify-content-center align-items-center">Saiba
+                        mais</a>
                     </span>
                   </div>
                 </div>
@@ -1160,6 +1207,10 @@
         el: '.swiper-pagination',
         clickable: true
       },
+      navigation: {
+        nextEl: ".button-next",
+        prevEl: ".button-prev",
+      },
       breakpoints: {
 
         468: {
@@ -1185,6 +1236,7 @@
           slidesPerView: 3.5,
           spaceBetween: 30,
         },
+
       },
     });
 
@@ -1197,6 +1249,10 @@
       //   el: '.swiper-pagination',
       //   clickable: true
       // },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
       breakpoints: {
         320: {
           slidesPerView: 1,
@@ -1215,7 +1271,7 @@
           spaceBetween: 10,
         },
         1366: {
-          slidesPerView: 1.9,
+          slidesPerView: 1.5,
           spaceBetween: 10,
         },
       },
