@@ -67,6 +67,11 @@ html {
   padding-right: 50px;
 }
 
+
+.bg-all-black {
+  background-color: #000000;
+}
+
 .title-down-line::before {
   background-color: #fbba00;
   content: "";
