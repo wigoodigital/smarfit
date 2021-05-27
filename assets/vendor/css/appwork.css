@@ -3473,7 +3473,7 @@ select.form-control-lg[size="0"]:not([multiple]) {
 .form-control.is-invalid,
 .was-validated .custom-select:invalid,
 .custom-select.is-invalid {
-  border-color: #d9534f;
+  border-color: #d9534f !important;
 }
 .was-validated
   .custom-control[class]
