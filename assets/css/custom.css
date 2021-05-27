@@ -5,11 +5,13 @@ html {
 .btn-search {
   background-color: #202020 !important;
   border-radius: 0 !important;
+  color:#FFF !important;
 }
 
 .btn-know-more {
   background-color: #202020 !important;
   border-radius: 0 !important;
+  color:#FFF !important;
   width: 200px;
   height: 60px;
 }
@@ -166,9 +168,19 @@ html {
   width:100%;
   padding-top:10px;
   padding-bottom:10px;
-  font-size:1.25em;
+  font-size:1em;
   text-align: center;
   background-color:#202020;
+}
+
+.card-smartfit-cta p{
+  font-weight: 500;
+  color:#000;
+  width:100%;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size:0.7em;
+  text-align: center;
 }
 
 .box-app-download {
