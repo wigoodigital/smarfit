@@ -329,7 +329,7 @@
                     required: "Desculpe, este campo é obrigatório.",
                     phone: "Por favor, informe um número de celular válido.",
                     remote: "Please fix this field.",
-                    email: "Please enter a valid email address.",
+                    email: "Por favor, insira um email válido.",
                     url: "Please enter a valid URL.",
                     date: "Please enter a valid date.",
                     dateISO: "Please enter a valid date (ISO).",
