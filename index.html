@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="assets/vendor/fonts/linearicons.css">
   <link rel="stylesheet" href="assets/vendor/fonts/open-iconic.css">
   <link rel="stylesheet" href="assets/vendor/fonts/pe-icon-7-stroke.css">
+  <link rel="stylesheet" href="assets/vendor/fonts/gotham.css">
 
   <!-- Core stylesheets -->
   <link rel="stylesheet" href="assets/vendor/css/rtl/bootstrap.css" class="theme-settings-bootstrap-css">
@@ -28,8 +29,9 @@
   <link rel="stylesheet" href="assets/vendor/css/rtl/colors.css" class="theme-settings-colors-css">
   <link rel="stylesheet" href="assets/vendor/css/rtl/uikit.css">
   <link rel="stylesheet" href="assets/css/demo.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
-  <link rel="stylesheet" href="assets/vendor/fonts/gotham.css">
+  <!-- <link rel="stylesheet" href="assets/css/custom.css"> -->
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  
 
   <!-- Load polyfills -->
   <script src="assets/vendor/js/polyfills.js"></script>
@@ -79,7 +81,8 @@
 
 </head>
 
-<body>
+<body class="light">
+<!-- <body class="dark"> -->
   <div class="page-loader">
     <div class="bg-primary"></div>
   </div>
@@ -89,10 +92,10 @@
     <div class="layout-inner">
 
       <!-- Layout container -->
-      <div class="layout-container">
+      <div class="layout-container bg-theme">
 
         <!-- Layout navbar -->
-        <nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white container-p-x "
+        <nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center container-p-x "
           id="layout-navbar" style='border:0 !important;box-shadow: none !important;'>
           <div class="container">
 
@@ -120,7 +123,7 @@
         <!-- / Layout navbar -->
 
         <!-- Layout content -->
-        <div class="layout-content bg-white">
+        <div class="layout-content">
 
           <!-- Banner Principal -->
           <section>
@@ -159,97 +162,99 @@
           </section>
 
           <!-- Baixe o App -->
-          <section class='container' style='min-height:85vh;' id="App">
-            <div class='d-flex flex-1 flex-row flex-wrap justify-content-center align-items-center'>
-              <div class='col-12 col-md-6 '>
-                <div class='d-flex flex-1 flex-column flex-wrap justify-content-center align-items-center mb-0 mb-sm-5'>
-                  <h2>Baixe o app e comece a treinar agora!</h2>
-                  <img width='100%' src='./assets/img/smartphone.png'>
-                  <div class='d-flex flex-1 flex-row justify-content-between align-items-center'>
-                    <a href='#'><img width='90%' src='./assets/img/GooglePlay.png'></a>
-                    <a href='#'><img width='90%' src='./assets/img/AppStore.png'></a>
-                  </div>
-                </div>
-              </div>
-              <div class='col-12 col-md-6 '>
-                <div class='box-app-download p-5 '>
-                  <h4 class='active-line-effect'>E mais! Uma experiência completa
-                    para você cuidar da sua saúde onde quiser.
-                  </h4>
-                  <p class='pt-5'><strong>Treinos online, consultoria com professores e nutricionistas</strong> via
-                    videochamada, além de mais de <strong>900 unidades</strong> na América Latina!</p>
-                  <div class='cards-smartfit'>
-                    <div class='swiper-container swiper-smartfit'>
-                      <div class='swiper-wrapper'>
-                        <div class='swiper-slide'>
-                          <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                            <span class='smartfit-card-title'>Smart Fit GO</span>
-                            <img src='./assets/img/cta/cta-01.webp'>
-                            <span class='cta-mark'>Exclusivo para clientes</span>
-                            <div
-                              class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                              <h5>Um treino novo todos os dias!</h5>
-                              <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e quando
-                                  quiser.</strong></p>
-                              <a class='btn btn-cta' href='https://www.smartfit-go.com'  target='_blank'>Inscrever-se</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class='swiper-slide'>
-                          <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                            <span class='smartfit-card-title'>Smart Fit Class</span>
-                            <img src='./assets/img/cta/cta-02.webp'>
-                            <span class='cta-mark'>Exclusivo para clientes</span>
-                            <div
-                              class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                              <h5>Aulas coletivas mesmo dentro de casa</h5>
-                              <p><strong>Aproveite FitDance, Zumba, Abdominal e Alongamento</strong> por chamada de vídeo, com a mesma interação do presencial.</p>
-                              <a class='btn btn-cta' href='https://smartfit.com.br/smartfitclass'  target='_blank'>
-                                Agendar atendimento</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class='swiper-slide'>
-                          <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                            <span class='smartfit-card-title'>Smart Fit Coach</span>
-                            <img src='./assets/img/cta/cta-03.webp'>
-                            <span class='cta-mark d-flex justify-content-center align-items-center text-left flex-column'>+R$29,90 /mês
-                              <span style='font-size:0.6em'>*Permanência: 3 meses</span></span>
-                            <div
-                              class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                              <h5>Sua consultoria online de treinos</h5>
-                              <p>Tenha mais motivação e ajuste sua rotina com um <strong>professor sempre por
-                                  perto.</strong>
-                              </p>
-                              <a class='btn btn-cta' href='https://www.smartfit.com.br/coach-online' target='_blank'>
-                                Reservar aula</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class='swiper-slide'>
-                          <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                            <span class='smartfit-card-title'>Smart Fit Nutri</span>
-                            <img src='./assets/img/cta/cta-04.webp'>
-                            <span class='cta-mark d-flex justify-content-center align-items-center text-left flex-column'>+R$19,90 /mês
-                              <span style='font-size:0.6em'>*Permanência: 12 meses</span></span>
-                            <div
-                              class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                              <h5>Equipe de nutricionista a um clique</h5>
-                              <p>Mude sua alimentação com cardápios e receitas saudáveis <strong>+ 2 consultas
-                                  online.</strong></p>
-                              <a class='btn btn-cta' href='https://www.smartnutriapp.com'  target='_blank'>
-                                Baixar Agora</a>
-                            </div>
-                          </div>
-                        </div>
-
-
-
-                      </div>
+          <section class='bg-soft' style='min-height:85vh;' id="App">
+            <div class="container flex-grow-1 container-p-y">
+              <div class='d-flex flex-1 flex-row flex-wrap justify-content-center align-items-center'>
+                <div class='col-12 col-md-6 '>
+                  <div class='d-flex flex-1 flex-column flex-wrap justify-content-center align-items-center mb-0 mb-sm-5'>
+                    <h2>Baixe o app e comece a treinar agora!</h2>
+                    <img width='100%' src='./assets/img/smartphone.png'>
+                    <div class='d-flex flex-1 flex-row justify-content-between align-items-center'>
+                      <a href='#'><img width='90%' src='./assets/img/GooglePlay.png'></a>
+                      <a href='#'><img width='90%' src='./assets/img/AppStore.png'></a>
                     </div>
                   </div>
                 </div>
+                <div class='col-12 col-md-6 '>
+                  <div class='box-app-download p-5 '>
+                    <h4 class='active-line-effect'>E mais! Uma experiência completa
+                      para você cuidar da sua saúde onde quiser.
+                    </h4>
+                    <p class='pt-5'><strong>Treinos online, consultoria com professores e nutricionistas</strong> via
+                      videochamada, além de mais de <strong>900 unidades</strong> na América Latina!</p>
+                    <div class='cards-smartfit'>
+                      <div class='swiper-container swiper-smartfit'>
+                        <div class='swiper-wrapper'>
+                          <div class='swiper-slide'>
+                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
+                              <span class='smartfit-card-title'>Smart Fit GO</span>
+                              <img src='./assets/img/cta/cta-01.webp'>
+                              <span class='cta-mark'>Exclusivo para clientes</span>
+                              <div
+                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
+                                <h5>Um treino novo todos os dias!</h5>
+                                <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e quando
+                                    quiser.</strong></p>
+                                <a class='btn btn-cta' href='https://www.smartfit-go.com'  target='_blank'>Inscrever-se</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='swiper-slide'>
+                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
+                              <span class='smartfit-card-title'>Smart Fit Class</span>
+                              <img src='./assets/img/cta/cta-02.webp'>
+                              <span class='cta-mark'>Exclusivo para clientes</span>
+                              <div
+                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
+                                <h5>Aulas coletivas mesmo dentro de casa</h5>
+                                <p><strong>Aproveite FitDance, Zumba, Abdominal e Alongamento</strong> por chamada de vídeo, com a mesma interação do presencial.</p>
+                                <a class='btn btn-cta' href='https://smartfit.com.br/smartfitclass'  target='_blank'>
+                                  Agendar atendimento</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='swiper-slide'>
+                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
+                              <span class='smartfit-card-title'>Smart Fit Coach</span>
+                              <img src='./assets/img/cta/cta-03.webp'>
+                              <span class='cta-mark d-flex justify-content-center align-items-center text-left flex-column'>+R$29,90 /mês
+                                <span style='font-size:0.6em'>*Permanência: 3 meses</span></span>
+                              <div
+                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
+                                <h5>Sua consultoria online de treinos</h5>
+                                <p>Tenha mais motivação e ajuste sua rotina com um <strong>professor sempre por
+                                    perto.</strong>
+                                </p>
+                                <a class='btn btn-cta' href='https://www.smartfit.com.br/coach-online' target='_blank'>
+                                  Reservar aula</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='swiper-slide'>
+                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
+                              <span class='smartfit-card-title'>Smart Fit Nutri</span>
+                              <img src='./assets/img/cta/cta-04.webp'>
+                              <span class='cta-mark d-flex justify-content-center align-items-center text-left flex-column'>+R$19,90 /mês
+                                <span style='font-size:0.6em'>*Permanência: 12 meses</span></span>
+                              <div
+                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
+                                <h5>Equipe de nutricionista a um clique</h5>
+                                <p>Mude sua alimentação com cardápios e receitas saudáveis <strong>+ 2 consultas
+                                    online.</strong></p>
+                                <a class='btn btn-cta' href='https://www.smartnutriapp.com'  target='_blank'>
+                                  Baixar Agora</a>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
+            </div>
           </section>
 
           <!-- Dúvidas Frequentes -->
@@ -614,118 +619,122 @@
           </section>
 
           <!-- Covid -->
-          <section class="container flex-grow-1 container-p-y">
+          <section class="bg-soft" id="Covid">
 
-            <div class="d-flex flex-1 flex-column mt-4 padding-default" id="Covid">
+            <div class="container flex-grow-1 container-p-y">
 
-
-              <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
-                <h1 class="display-4 text-center">Vamos vencer a <span
-                    style="color: #FBBA00;font-weight: 600;">COVID-19</span></h1>
-                <div class="lead text-muted pb-3 mt-4 mb-5">
-                  Precisamos da sua ajuda. Só assim, vamos conseguir deixar a Smart Fit um lugar mais seguro para todos.
-                </div>
-              </div>
-
-              <!-- Multiple slides -->
-              <div class="swiper-container" id="swiper-multiple-slides">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class='card-covid'>
-                      <h5>Desinfecção Completa</h5>
-                      <div id="animation-covid-1"></div>
-                      <p>Desinfectamos todas as academias com aparelho nebulizador de 2 a 3 vezes por dia.</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class='card-covid'>
-                      <h5>Distância entre Aparelhos</h5>
-                      <div id="animation-covid-2"></div>
-                      <p>Desativamos metade dos aparelhos de cardio para manter uma distância segura entre os clientes.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class='card-covid'>
-                      <h5>Agende seu Horário</h5>
-                      <div id="animation-covid-3"></div>
-                      <p>Vamos evitar aglomeração. Antes de ir à academia agende seu horário aqui.</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class='card-covid'>
-                      <h5>Termômetro digital</h5>
-                      <div id="animation-covid-4"></div>
-                      <p>Vamos medir sua temperatura na recepção. Se estiver acima de 37.8º C volte para casa por favor.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class='card-covid'>
-                      <h5>Uso de máscaras</h5>
-                      <div id="animation-covid-5"></div>
-                      <p>A máscara é obrigatória. Toda nossa equipe usará máscaras assim como os alunos.</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class='card-covid'>
-                      <h5>Tapetes de higienização</h5>
-                      <div id="animation-covid-6"></div>
-                      <p>Temos tapetes na entrada para você higienizar seus tênis.</p>
-                    </div>
-                  </div>
-
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-
-            </div>
-
-            <div class="d-flex flex-1 flex-column mt-4 padding-default">
-
-              <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
-                <h1 class="display-4 text-center text-dark"><strong class="title-down-line">Cuidados</strong> Básicos
-                </h1>
-              </div>
-
-              <div class="row text-center m-auto padding-default-70">
-
-                <div class="col-sm-6 col-lg-4 p-4">
-
-                  <h3 class="mb-2" style="font-weight: 200;">Use <strong
-                      class="font-weight-bold primary-text-color">Máscara</strong></h3>
-                  <p class="padding-default-10">É obrigatório usar máscara. Cubra o nariz,
-                    boca e queixo para evitar as gotículas de
-                    salsa </p>
-                </div>
-                <div class="col-sm-6 col-lg-4 p-4">
-
-                  <h3 class="mb-2" style="font-weight: 200;">Leve <strong class="font-weight-bold primary-text-color">
-                      Água</strong></h3>
-                  <p class="padding-default-10">Não se esqueça da garrafinha com água nem todas as cidades tem liberação
-                    para usar bebedouro</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 p-4">
-
-                  <h3 class="mb-2" style="font-weight: 200;">Álcool a <strong
-                      class="font-weight-bold primary-text-color">70%</strong></h3>
-
-                  <p class="padding-default-10">Temos álcool a 70% em todas as áreas da academia para você</p>
-
-                </div>
+              <div class="d-flex flex-1 flex-column mt-4 padding-default">
 
 
                 <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
-                  <div class="d-flex justify-content-center align-items-center">
-                    <span class="input-group-append">
-                      <button type="button" class="btn btn-primary btn-know-more">Saiba mais</button>
-                    </span>
+                  <h1 class="display-4 text-center">Vamos vencer a <span
+                      style="color: #FBBA00;font-weight: 600;">COVID-19</span></h1>
+                  <div class="lead text-muted pb-3 mt-4 mb-5">
+                    Precisamos da sua ajuda. Só assim, vamos conseguir deixar a Smart Fit um lugar mais seguro para todos.
                   </div>
+                </div>
+
+                <!-- Multiple slides -->
+                <div class="swiper-container" id="swiper-multiple-slides">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class='card-covid'>
+                        <h5>Desinfecção Completa</h5>
+                        <div id="animation-covid-1"></div>
+                        <p>Desinfectamos todas as academias com aparelho nebulizador de 2 a 3 vezes por dia.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class='card-covid'>
+                        <h5>Distância entre Aparelhos</h5>
+                        <div id="animation-covid-2"></div>
+                        <p>Desativamos metade dos aparelhos de cardio para manter uma distância segura entre os clientes.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class='card-covid'>
+                        <h5>Agende seu Horário</h5>
+                        <div id="animation-covid-3"></div>
+                        <p>Vamos evitar aglomeração. Antes de ir à academia agende seu horário aqui.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class='card-covid'>
+                        <h5>Termômetro digital</h5>
+                        <div id="animation-covid-4"></div>
+                        <p>Vamos medir sua temperatura na recepção. Se estiver acima de 37.8º C volte para casa por favor.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class='card-covid'>
+                        <h5>Uso de máscaras</h5>
+                        <div id="animation-covid-5"></div>
+                        <p>A máscara é obrigatória. Toda nossa equipe usará máscaras assim como os alunos.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class='card-covid'>
+                        <h5>Tapetes de higienização</h5>
+                        <div id="animation-covid-6"></div>
+                        <p>Temos tapetes na entrada para você higienizar seus tênis.</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="swiper-pagination"></div>
                 </div>
 
               </div>
 
+              <div class="d-flex flex-1 flex-column mt-4 padding-default">
 
+                <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
+                  <h1 class="display-4 text-center"><strong class="title-down-line">Cuidados</strong> Básicos
+                  </h1>
+                </div>
+
+                <div class="row text-center m-auto padding-default-70">
+
+                  <div class="col-sm-6 col-lg-4 p-4">
+
+                    <h3 class="mb-2" style="font-weight: 200;">Use <strong
+                        class="font-weight-bold primary-text-color">Máscara</strong></h3>
+                    <p class="padding-default-10">É obrigatório usar máscara. Cubra o nariz,
+                      boca e queixo para evitar as gotículas de
+                      salsa </p>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 p-4">
+
+                    <h3 class="mb-2" style="font-weight: 200;">Leve <strong class="font-weight-bold primary-text-color">
+                        Água</strong></h3>
+                    <p class="padding-default-10">Não se esqueça da garrafinha com água nem todas as cidades tem liberação
+                      para usar bebedouro</p>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 p-4">
+
+                    <h3 class="mb-2" style="font-weight: 200;">Álcool a <strong
+                        class="font-weight-bold primary-text-color">70%</strong></h3>
+
+                    <p class="padding-default-10">Temos álcool a 70% em todas as áreas da academia para você</p>
+
+                  </div>
+
+
+                  <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <span class="input-group-append">
+                        <button type="button" class="btn btn-primary btn-know-more">Saiba mais</button>
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+
+
+              </div>
 
             </div>
 
