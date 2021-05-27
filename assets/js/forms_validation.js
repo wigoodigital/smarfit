@@ -1,18 +1,5 @@
 $(function() {
-  // Initialize Select2 select box
-  $('select[name="validation-select2"]').select2({
-    allowClear:  true,
-    placeholder: 'Select a framework...',
-  }).change(function() {
-    $(this).valid();
-  });
 
-  // Initialize Select2 multiselect box
-  $('select[name="validation-select2-multi"]').select2({
-    placeholder: 'Select gear...',
-  }).change(function() {
-    $(this).valid();
-  });
 
   // Trigger validation on tagsinput change
   $('input[name="validation-bs-tagsinput"]').on('itemAdded itemRemoved', function() {
@@ -23,13 +10,13 @@ $(function() {
   $.validator.addMethod(
     'phone_format',
     function(value, element) {
-      return this.optional(element) || /^\(\d{3}\)[ ]\d{3}\-\d{4}$/.test(value);
+      return this.optional(element) || /^\([0-9]{2}\) [0-9]?[0-9]{4}-[0-9]{4}$/.test(value);
     },
-    'Invalid phone number.'
+    'Por favor, informe um número de celular válido.',
   );
 
   // Initialize validation
-  $('#validation-form').validate({
+  $('#validation-form-1').validate({
     ignore: '.ignore, .select2-input',
     focusInvalid: false,
     rules: {
@@ -37,82 +24,36 @@ $(function() {
         required: true,
         email: true
       },
-      'validation-password': {
+      'validation-name': {
         required: true,
-        minlength: 6,
-        maxlength: 20
-      },
-      'validation-password-confirmation': {
-        required: true,
-        minlength: 6,
-        equalTo: 'input[name="validation-password"]'
-      },
-      'validation-required': {
-        required: true
-      },
-      'validation-url': {
-        required: true,
-        url: true
+        minlength: 10,
+        maxlength: 100
       },
       'validation-phone': {
         required: true,
         phone_format: true
       },
-      'validation-select': {
+      'validation-subject': {
         required: true
       },
-      'validation-multiselect': {
+      'validation-message': {
         required: true,
-        minlength: 2
+        minlength: 50,
       },
-      'validation-select2': {
+      'validation-aluno': {
         required: true
       },
-      'validation-select2-multi': {
+      'validation-message': {
+        required: true
+      },
+      'validation-cpf': {
         required: true,
-        minlength: 2
+        minlength:11,
       },
-      'validation-bs-tagsinput': {
-        required: true
-      },
-      'validation-text': {
-        required: true
-      },
-      'validation-file': {
-        required: true
-      },
-      'validation-switcher': {
-        required: true
-      },
-      'validation-radios': {
-        required: true
-      },
-      'validation-radios-custom': {
-        required: true
-      },
-      'validation-checkbox': {
-        required: true
-      },
-      'validation-checkbox-custom': {
+      'validation-unidade': {
         required: true
       },
 
-      // Checkbox groups
-      //
-
-      'validation-checkbox-group-1': {
-        require_from_group: [1, 'input[name="validation-checkbox-group-1"], input[name="validation-checkbox-group-2"]']
-      },
-      'validation-checkbox-group-2': {
-        require_from_group: [1, 'input[name="validation-checkbox-group-1"], input[name="validation-checkbox-group-2"]']
-      },
-
-      'validation-checkbox-custom-group-1': {
-        require_from_group: [1, 'input[name="validation-checkbox-custom-group-1"], input[name="validation-checkbox-custom-group-2"]']
-      },
-      'validation-checkbox-custom-group-2': {
-        require_from_group: [1, 'input[name="validation-checkbox-custom-group-1"], input[name="validation-checkbox-custom-group-2"]']
-      }
     },
 
     // Errors

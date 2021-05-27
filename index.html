@@ -81,10 +81,10 @@
 
     }
 
-    .card-covid h5, .card-covid p{
+    .card-covid h5,
+    .card-covid p {
       margin-bottom: 0;
     }
-    
   </style>
 
 </head>
@@ -734,7 +734,7 @@
               </div>
 
             </div>
-            
+
             <div class="d-flex flex-1 flex-column mt-4 padding-default">
 
               <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
@@ -792,78 +792,80 @@
           <section class="container flex-grow-1 container-p-y" id="SAC">
             <div class="container row padding-default-bottom-top-dif">
               <div class='col-12 col-lg-6 d-block' style="padding: 20px !important;">
-  
+
                 <div style="width: 100%; height: 100%;">
                   <img src="./assets/img/smartfit-fale-conosco.png" style="width: 100%;">
                 </div>
-  
+
               </div>
               <div class='col-12 col-lg-6 d-lg-block'>
                 <h1 class="display-4 title-down-line-2"><strong>Fale conosco</strong></h1>
-  
+
                 <div class="lead text-muted pb-3 mt-4 mb-5">
                   Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet
                 </div>
-  
-                <form action="#">
+
+                <form id="validation-form-1"  action='post'>
                   <div class="form-group">
-                    <input type="text" class="form-control form-adjust" placeholder="Nome completo">
+                    <input type="text" class="form-control nome form-adjust" name="validation-name"
+                      placeholder="Nome completo">
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="CPF"
+                    <input type="text" class="form-control cpf"  name="validation-cpf" placeholder="CPF"
                       style="border: 1px solid #D1D1D1; padding: 10px; border-radius: 0px;padding: 25px;">
                   </div>
-  
+
                   <div class="form-group">
-                    <input type="text" class="form-control form-adjust" placeholder="Email">
+                    <input type="email" class="form-control form-adjust" name="validation-email" placeholder="Email">
                   </div>
-  
+
                   <div class="form-group">
-                    <input type="text" class="form-control form-adjust" placeholder="Telefone">
+                    <input type="phone" class="form-control form-adjust phone_with_ddd" name="validation-phone" placeholder="Celular">
                   </div>
-  
+
                   <div class="form-group">
-                    <select class="selectpicker" title="Qual a unidade?" data-width="100%">
+                    <select class="selectpicker" title="Qual a unidade?" name="validation-unidade" data-width="100%">
                       <option>A</option>
                       <option>B</option>
                     </select>
-  
+
                   </div>
                   <div class="form-group">
-                    <select class="selectpicker" title="Já é aluno da Smart Fit?" data-width="100%">
+                    <select class="selectpicker" title="Já é aluno da Smart Fit?" name="validation-aluno"
+                      data-width="100%">
                       <option>Sim</option>
                       <option>Não</option>
                     </select>
-  
+
                   </div>
-  
-  
+
+
                   <div class="form-group">
-                    <select class="selectpicker" title="Assunto" data-width="100%">
+                    <select class="selectpicker" title="Qual o assunto?" name="validation-subject" data-width="100%">
                       <option selected hidden disabled>Mustard</option>
                       <option>A</option>
                       <option>B</option>
                     </select>
-  
+
                   </div>
-  
-  
-  
+
+
+
                   <div class="form-group">
-                    <textarea draggable="false" name="" id="" cols="30" rows="7" class="form-control"
-                      placeholder="Mensagem"
+                    <textarea draggable="false" name="" id="" name="validation-message" cols="30" rows="7"
+                      class="form-control messagem" placeholder="Mensagem"
                       style="border: 1px solid #D1D1D1; padding: 10px; border-radius: 0px;padding: 15px; resize: none;"></textarea>
                   </div>
-  
-  
-  
+
+
+
                   <div class="d-flex justify-content-end align-items-end">
                     <span class="input-group-append">
-                      <button type="button" class="btn btn-primary btn-know-more">Enviar</button>
+                      <button type="submit" class="btn btn-primary btn-know-more">Enviar</button>
                     </span>
                   </div>
                 </form>
-  
+
               </div>
             </div>
 
@@ -1024,7 +1026,7 @@
           </footer>
           <!-- Footer -->
 
-        </div>  
+        </div>
         <!-- Layout content -->
 
       </div>
@@ -1046,12 +1048,14 @@
   <!-- Libs -->
   <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
   <script src="assets/vendor/libs/swiper/swiper.js"></script>
+  <script src="assets/vendor/libs/validate/validate.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 
   <!-- Demo -->
   <script src="assets/js/demo.js"></script>
-
+  <script src="assets/js/forms_validation.js"></script>
+  <script src="assets/js/jquery.mask.min.js"></script>
 
 
 
@@ -1060,134 +1064,136 @@
   <script>
     var logo = document.getElementById('motionLogo-light');
     var animationLogo = lottie.loadAnimation({
-        container: logo,
-        renderer: 'svg',
-        //renderer: 'html',
-        loop: true,
-        autoplay: true,
-        rendererSettings: {
-        progressiveLoad:false,
-        preserveAspectRatio: 'xMaxYMax slice' ,
+      container: logo,
+      renderer: 'svg',
+      //renderer: 'html',
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        progressiveLoad: false,
+        preserveAspectRatio: 'xMaxYMax slice',
         viewBoxSize: '180 90 720 720'
-        },
-        path: 'assets/animation/light/data.json'
-        //path: 'assets/animation/dark/data.json'
-        //path: 'assets/animation/covid/1/data.json'
-        //path: 'assets/animation/covid/2/data.json'
-        //path: 'assets/animation/covid/3/data.json'
-        //path: 'assets/animation/covid/4/data.json'
-        //path: 'assets/animation/covid/5/data.json'
-        //path: 'assets/animation/covid/6/data.json'
+      },
+      path: 'assets/animation/light/data.json'
+      //path: 'assets/animation/dark/data.json'
+      //path: 'assets/animation/covid/1/data.json'
+      //path: 'assets/animation/covid/2/data.json'
+      //path: 'assets/animation/covid/3/data.json'
+      //path: 'assets/animation/covid/4/data.json'
+      //path: 'assets/animation/covid/5/data.json'
+      //path: 'assets/animation/covid/6/data.json'
     });
 
     var covid1 = document.getElementById('animation-covid-1');
     var animationCovid1 = lottie.loadAnimation({
-        container: covid1,
-        renderer: 'svg',
-        //renderer: 'html',
-        loop: true,
-        autoplay: true,
-        rendererSettings: {
-          progressiveLoad:false,
-          preserveAspectRatio: 'xMaxYMax slice',
-          viewBoxSize: '180 180 720 720'
-        },        
-        path: 'assets/animation/covid/1/data.json'
-        //path: 'assets/animation/covid/2/data.json'
-        //path: 'assets/animation/covid/3/data.json'
-        //path: 'assets/animation/covid/4/data.json'
-        //path: 'assets/animation/covid/5/data.json'
-        //path: 'assets/animation/covid/6/data.json'
+      container: covid1,
+      renderer: 'svg',
+      //renderer: 'html',
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        progressiveLoad: false,
+        preserveAspectRatio: 'xMaxYMax slice',
+        viewBoxSize: '180 180 720 720'
+      },
+      path: 'assets/animation/covid/1/data.json'
+      //path: 'assets/animation/covid/2/data.json'
+      //path: 'assets/animation/covid/3/data.json'
+      //path: 'assets/animation/covid/4/data.json'
+      //path: 'assets/animation/covid/5/data.json'
+      //path: 'assets/animation/covid/6/data.json'
     });
-    
+
     var covid2 = document.getElementById('animation-covid-2');
     var animationCovid2 = lottie.loadAnimation({
-        container: covid2,
-        renderer: 'svg',
-        //renderer: 'html',
-        loop: true,
-        autoplay: true,
-        rendererSettings: {
-          progressiveLoad:false,
-          preserveAspectRatio: 'xMaxYMax slice',
-          viewBoxSize: '180 180 720 720'
-        },                
-        path: 'assets/animation/covid/2/data.json'
-        //path: 'assets/animation/covid/3/data.json'
-        //path: 'assets/animation/covid/4/data.json'
-        //path: 'assets/animation/covid/5/data.json'
-        //path: 'assets/animation/covid/6/data.json'
+      container: covid2,
+      renderer: 'svg',
+      //renderer: 'html',
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        progressiveLoad: false,
+        preserveAspectRatio: 'xMaxYMax slice',
+        viewBoxSize: '180 180 720 720'
+      },
+      path: 'assets/animation/covid/2/data.json'
+      //path: 'assets/animation/covid/3/data.json'
+      //path: 'assets/animation/covid/4/data.json'
+      //path: 'assets/animation/covid/5/data.json'
+      //path: 'assets/animation/covid/6/data.json'
     });
-    
+
     var covid3 = document.getElementById('animation-covid-3');
     var animationCovid3 = lottie.loadAnimation({
-        container: covid3,
-        renderer: 'svg',
-        //renderer: 'html',
-        loop: true,
-        autoplay: true,
-        rendererSettings: {
-          progressiveLoad:false,
-          preserveAspectRatio: 'xMaxYMax slice',
-          viewBoxSize: '180 180 720 720'
-        },                        
-        path: 'assets/animation/covid/3/data.json'
-        //path: 'assets/animation/covid/4/data.json'
-        //path: 'assets/animation/covid/5/data.json'
-        //path: 'assets/animation/covid/6/data.json'
+      container: covid3,
+      renderer: 'svg',
+      //renderer: 'html',
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        progressiveLoad: false,
+        preserveAspectRatio: 'xMaxYMax slice',
+        viewBoxSize: '180 180 720 720'
+      },
+      path: 'assets/animation/covid/3/data.json'
+      //path: 'assets/animation/covid/4/data.json'
+      //path: 'assets/animation/covid/5/data.json'
+      //path: 'assets/animation/covid/6/data.json'
     });
-    
+
     var covid4 = document.getElementById('animation-covid-4');
     var animationCovid4 = lottie.loadAnimation({
-        container: covid4,
-        renderer: 'svg',
-        //renderer: 'html',
-        loop: true,
-        autoplay: true,
-        rendererSettings: {
-          progressiveLoad:false,
-          preserveAspectRatio: 'xMaxYMax slice',
-          viewBoxSize: '180 180 720 720'
-        },                                
-        path: 'assets/animation/covid/4/data.json'
-        //path: 'assets/animation/covid/5/data.json'
-        //path: 'assets/animation/covid/6/data.json'
+      container: covid4,
+      renderer: 'svg',
+      //renderer: 'html',
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        progressiveLoad: false,
+        preserveAspectRatio: 'xMaxYMax slice',
+        viewBoxSize: '180 180 720 720'
+      },
+      path: 'assets/animation/covid/4/data.json'
+      //path: 'assets/animation/covid/5/data.json'
+      //path: 'assets/animation/covid/6/data.json'
     });
-    
+
     var covid5 = document.getElementById('animation-covid-5');
     var animationCovid5 = lottie.loadAnimation({
-        container: covid5,
-        renderer: 'svg',
-        //renderer: 'html',
-        loop: true,
-        autoplay: true,
-        rendererSettings: {
-          progressiveLoad:false,
-          preserveAspectRatio: 'xMaxYMax slice',
-          viewBoxSize: '180 180 720 720'
-        },                                        
-        path: 'assets/animation/covid/5/data.json'
-        //path: 'assets/animation/covid/6/data.json'
+      container: covid5,
+      renderer: 'svg',
+      //renderer: 'html',
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        progressiveLoad: false,
+        preserveAspectRatio: 'xMaxYMax slice',
+        viewBoxSize: '180 180 720 720'
+      },
+      path: 'assets/animation/covid/5/data.json'
+      //path: 'assets/animation/covid/6/data.json'
     });
-    
+
     var covid6 = document.getElementById('animation-covid-6');
     var animationCovid6 = lottie.loadAnimation({
-        container: covid6,
-        renderer: 'svg',
-        //renderer: 'html',
-        loop: true,
-        autoplay: true,
-        rendererSettings: {
-          progressiveLoad:false,
-          preserveAspectRatio: 'xMaxYMax slice',
-          viewBoxSize: '180 180 720 720'
-        },                                                
-        path: 'assets/animation/covid/6/data.json'
+      container: covid6,
+      renderer: 'svg',
+      //renderer: 'html',
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        progressiveLoad: false,
+        preserveAspectRatio: 'xMaxYMax slice',
+        viewBoxSize: '180 180 720 720'
+      },
+      path: 'assets/animation/covid/6/data.json'
     });
 
 
   </script>
 
+
+  <!-- Swiper Things -->
   <script>
     var swiperMultipleSlides = new Swiper('#swiper-multiple-slides', {
       slidesPerView: 3.5,
@@ -1257,6 +1263,18 @@
         },
       },
     });
+  </script>
+
+
+  <!-- Input Mask -->
+  <script>
+    $(document).ready(function () {
+      $('.phone_with_ddd').mask('(00) 00000-0000');
+      $('.cpf').mask('000.000.000-00', { reverse: true });
+      $('.nome').mask('Z',{translation: {'Z': {pattern: /[a-zA-Z ]/, recursive: true}}});
+    });
+
+
   </script>
 
 </body>
