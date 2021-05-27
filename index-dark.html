@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="assets/vendor/css/rtl/colors.css" class="theme-settings-colors-css">
   <link rel="stylesheet" href="assets/vendor/css/rtl/uikit.css">
   <link rel="stylesheet" href="assets/css/demo.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="assets/css/custom-dark-mode.css">
   <link rel="stylesheet" href="assets/vendor/fonts/gotham.css">
 
   <!-- Load polyfills -->
@@ -40,13 +40,13 @@
 
   <!-- Theme settings -->
   <!-- This file MUST be included after core stylesheets and layout-helpers.js in the <head> section -->
-  <!-- <script src="assets/vendor/js/theme-settings.js"></script>
+  <script src="assets/vendor/js/theme-settings.js"></script>
   <script>
     window.themeSettings = new ThemeSettings({
       cssPath: 'assets/vendor/css/',
       themesPath: 'assets/vendor/css/'
     });
-  </script> -->
+  </script>
 
   <!-- Core scripts -->
   <script src="assets/vendor/js/pace.js"></script>
@@ -78,7 +78,6 @@
 
     body {
       overflow-x: hidden;
-
     }
 
     .card-covid h5,
@@ -99,16 +98,17 @@
     <div class="layout-inner">
 
       <!-- Layout container -->
-      <div class="layout-container">
+      <div class="layout-container bg-all-black">
+
 
         <!-- Layout navbar -->
-        <nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-white container-p-x "
-          id="layout-navbar" style='border:0 !important;box-shadow: none !important;'>
+        <nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center container-p-x" id="layout-navbar"
+          style='border:0 !important;box-shadow: none !important;'>
           <div class="container">
 
             <a href="#" class="navbar-brand w-lg-100 text-large font-weight-bolder line-height-1 py-3 mr-0">
 
-              <img class='brand-img' src='./assets/img/logo.svg'>
+              <img class='brand-img' src='./assets/img/logo2.png'>
 
             </a>
 
@@ -118,10 +118,10 @@
 
             <div class="header-13 navbar-collapse collapse flex-shrink-0">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active-line active" href="#">CONHEÇA A SMART FIT</a>
-                <a class="nav-item nav-link" href="#App">BAIXAR APLICATIVO</a>
-                <a class="nav-item nav-link" href="#Covid">COVID-19</a>
-                <a class="nav-item nav-link" href="#Duvidas">DUVIDAS FREQUENTES</a>
+                <a class="nav-item nav-link active-line active text-white" href="#">CONHEÇA A SMART FIT</a>
+                <a class="nav-item nav-link text-white" href="#App">BAIXAR APLICATIVO</a>
+                <a class="nav-item nav-link text-white" href="#Covid">COVID-19</a>
+                <a class="nav-item nav-link text-white" href="#Duvidas">DUVIDAS FREQUENTES</a>
               </div>
             </div>
 
@@ -139,7 +139,7 @@
         <!-- / Layout navbar -->
 
         <!-- Layout content -->
-        <div class="layout-content bg-white">
+        <div class="layout-content">
 
           <!-- Banner Principal -->
           <section>
@@ -151,7 +151,7 @@
                   <div class='d-flex flex-1 flex-column p-0 m-0 justify-content-center text-center align-items-center'>
 
 
-                    <h2 class='text-color'>Bem-vindo(a) à</h2>
+                    <h2>Bem-vindo(a) à</h2>
 
 
                     <!-- <img width='95%' class='mt-5 mb-5' src='./assets/img/logo.svg'> -->
@@ -178,123 +178,133 @@
           </section>
 
           <!-- Baixe o App -->
-          <section class='container' style='min-height:85vh;' id="App">
-            <div class='d-flex flex-1 flex-row flex-wrap justify-content-center align-items-center'>
-              <div class='col-12 col-md-6 '>
-                <div class='d-flex flex-1 flex-column flex-wrap justify-content-center align-items-center mb-0 mb-sm-5'>
-                  <h2>Baixe o app e comece a treinar agora!</h2>
-                  <img width='100%' src='./assets/img/smartphone.png'>
-                  <div class='d-flex flex-1 flex-row justify-content-between align-items-center'>
-                    <a href='#'><img width='90%' src='./assets/img/GooglePlay.png'></a>
-                    <a href='#'><img width='90%' src='./assets/img/AppStore.png'></a>
+          <section class="bg-dark">
+            <div class='container padding-default' style='min-height:85vh;' id="App">
+              <div class='d-flex flex-1 flex-row flex-wrap justify-content-center align-items-center'>
+                <div class='col-12 col-md-6 '>
+                  <div
+                    class='d-flex flex-1 flex-column flex-wrap justify-content-center align-items-center mb-0 mb-sm-5'>
+                    <h2>Baixe o app e comece a treinar agora!</h2>
+                    <img width='100%' src='./assets/img/smartphone.png'>
+                    <div class='d-flex flex-1 flex-row justify-content-between align-items-center'>
+                      <a href='#'><img width='90%' src='./assets/img/GooglePlay.png'></a>
+                      <a href='#'><img width='90%' src='./assets/img/AppStore.png'></a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class='col-12 col-md-6 '>
-                <div class='box-app-download p-5 '>
-                  <h4 class='active-line-effect'>E mais! Uma experiência completa
-                    para você cuidar da sua saúde onde quiser.
-                  </h4>
-                  <p class='pt-5'><strong>Treinos online, consultoria com professores e nutricionistas</strong> via
-                    videochamada, além de mais de <strong>900 unidades</strong> na América Latina!</p>
-                  <div class='cards-smartfit'>
-                    <div class='swiper-container swiper-smartfit'>
-                      <div class='swiper-wrapper'>
-                        <div class='swiper-slide'>
-                          <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                            <span class='smartfit-card-title'>Smart Fit GO</span>
-                            <img src='./assets/img/cta-01.webp'>
-                            <span class='cta-mark'>Exclusivo para clientes</span>
-                            <div
-                              class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                              <h5>Um treino novo todos os dias!</h5>
-                              <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e quando
-                                  quiser.</strong></p>
-                              <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                <div class='col-12 col-md-6 '>
+                  <div class='box-app-download p-5 '>
+                    <h4 class='active-line-effect'>E mais! Uma experiência completa
+                      para você cuidar da sua saúde onde quiser.
+                    </h4>
+                    <p class='pt-5'><strong>Treinos online, consultoria com professores e nutricionistas</strong> via
+                      videochamada, além de mais de <strong>900 unidades</strong> na América Latina!</p>
+                    <div class='cards-smartfit'>
+                      <div class='swiper-container swiper-smartfit'>
+                        <div class='swiper-wrapper'>
+                          <div class='swiper-slide'>
+                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
+                              <span class='smartfit-card-title'>Smart Fit GO</span>
+                              <img src='./assets/img/cta-01.webp'>
+                              <span class='cta-mark'>Exclusivo para clientes</span>
+                              <div
+                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
+                                <h5>Um treino novo todos os dias!</h5>
+                                <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e
+                                    quando
+                                    quiser.</strong></p>
+                                <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class='swiper-slide'>
-                          <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                            <span class='smartfit-card-title'>Smart Fit GO</span>
-                            <img src='./assets/img/cta-01.webp'>
-                            <span class='cta-mark'>Exclusivo para clientes</span>
-                            <div
-                              class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                              <h5>Um treino novo todos os dias!</h5>
-                              <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e quando
-                                  quiser.</strong></p>
-                              <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                          <div class='swiper-slide'>
+                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
+                              <span class='smartfit-card-title'>Smart Fit GO</span>
+                              <img src='./assets/img/cta-01.webp'>
+                              <span class='cta-mark'>Exclusivo para clientes</span>
+                              <div
+                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
+                                <h5>Um treino novo todos os dias!</h5>
+                                <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e
+                                    quando
+                                    quiser.</strong></p>
+                                <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class='swiper-slide'>
-                          <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                            <span class='smartfit-card-title'>Smart Fit GO</span>
-                            <img src='./assets/img/cta-01.webp'>
-                            <span class='cta-mark'>Exclusivo para clientes</span>
-                            <div
-                              class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                              <h5>Um treino novo todos os dias!</h5>
-                              <p>O melhor da sua academia na sua casa! Aproveite suas aulas online onde e quando quiser.
-                              </p>
-                              <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                          <div class='swiper-slide'>
+                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
+                              <span class='smartfit-card-title'>Smart Fit GO</span>
+                              <img src='./assets/img/cta-01.webp'>
+                              <span class='cta-mark'>Exclusivo para clientes</span>
+                              <div
+                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
+                                <h5>Um treino novo todos os dias!</h5>
+                                <p>O melhor da sua academia na sua casa! Aproveite suas aulas online onde e quando
+                                  quiser.
+                                </p>
+                                <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class='swiper-slide'>
-                          <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                            <span class='smartfit-card-title'>Smart Fit GO</span>
-                            <img src='./assets/img/cta-01.webp'>
-                            <span class='cta-mark'>Exclusivo para clientes</span>
-                            <div
-                              class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                              <h5>Um treino novo todos os dias!</h5>
-                              <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e quando
-                                  quiser.</strong></p>
-                              <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                          <div class='swiper-slide'>
+                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
+                              <span class='smartfit-card-title'>Smart Fit GO</span>
+                              <img src='./assets/img/cta-01.webp'>
+                              <span class='cta-mark'>Exclusivo para clientes</span>
+                              <div
+                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
+                                <h5>Um treino novo todos os dias!</h5>
+                                <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e
+                                    quando
+                                    quiser.</strong></p>
+                                <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class='swiper-slide'>
-                          <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                            <span class='smartfit-card-title'>Smart Fit GO</span>
-                            <img src='./assets/img/cta-01.webp'>
-                            <span class='cta-mark'>Exclusivo para clientes</span>
-                            <div
-                              class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                              <h5>Um treino novo todos os dias!</h5>
-                              <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e quando
-                                  quiser.</strong></p>
-                              <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                          <div class='swiper-slide'>
+                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
+                              <span class='smartfit-card-title'>Smart Fit GO</span>
+                              <img src='./assets/img/cta-01.webp'>
+                              <span class='cta-mark'>Exclusivo para clientes</span>
+                              <div
+                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
+                                <h5>Um treino novo todos os dias!</h5>
+                                <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e
+                                    quando
+                                    quiser.</strong></p>
+                                <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class='swiper-slide'>
-                          <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                            <span class='smartfit-card-title'>Smart Fit GO</span>
-                            <img src='./assets/img/cta-01.webp'>
-                            <span class='cta-mark'>Exclusivo para clientes</span>
-                            <div
-                              class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                              <h5>Um treino novo todos os dias!</h5>
-                              <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e quando
-                                  quiser.</strong></p>
-                              <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                          <div class='swiper-slide'>
+                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
+                              <span class='smartfit-card-title'>Smart Fit GO</span>
+                              <img src='./assets/img/cta-01.webp'>
+                              <span class='cta-mark'>Exclusivo para clientes</span>
+                              <div
+                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
+                                <h5>Um treino novo todos os dias!</h5>
+                                <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e
+                                    quando
+                                    quiser.</strong></p>
+                                <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class='swiper-slide'>
-                          <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                            <span class='smartfit-card-title'>Smart Fit GO</span>
-                            <img src='./assets/img/cta-01.webp'>
-                            <span class='cta-mark'>Exclusivo para clientes</span>
-                            <div
-                              class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                              <h5>Um treino novo todos os dias!</h5>
-                              <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e quando
-                                  quiser.</strong></p>
-                              <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                          <div class='swiper-slide'>
+                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
+                              <span class='smartfit-card-title'>Smart Fit GO</span>
+                              <img src='./assets/img/cta-01.webp'>
+                              <span class='cta-mark'>Exclusivo para clientes</span>
+                              <div
+                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
+                                <h5>Um treino novo todos os dias!</h5>
+                                <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e
+                                    quando
+                                    quiser.</strong></p>
+                                <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -304,6 +314,7 @@
                 </div>
               </div>
           </section>
+
 
           <!-- Dúvidas Frequentes -->
           <section class="container flex-grow-1 container-p-y" id="Duvidas">
@@ -666,212 +677,219 @@
 
           </section>
 
+          <section class="bg-dark">
+            <!-- Covid -->
+            <div class="container flex-grow-1 container-p-y">
 
-          <!-- Covid -->
-          <section class="container flex-grow-1 container-p-y">
-
-            <div class="d-flex flex-1 flex-column mt-4 padding-default" id="Covid">
-
-
-              <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
-                <h1 class="display-4 text-center">Vamos vencer a <span
-                    style="color: #FBBA00;font-weight: 600;">COVID-19</span></h1>
-                <div class="lead text-muted pb-3 mt-4 mb-5">
-                  Precisamos da sua ajuda. Só assim, vamos conseguir deixar a Smart Fit um lugar mais seguro para todos.
-                </div>
-              </div>
-
-              <!-- Multiple slides -->
-              <div class="swiper-container" id="swiper-multiple-slides">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class='card-covid'>
-                      <h5>Desinfecção Completa</h5>
-                      <div id="animation-covid-1"></div>
-                      <p>Desinfectamos todas as academias com aparelho nebulizador de 2 a 3 vezes por dia.</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class='card-covid'>
-                      <h5>Distância entre Aparelhos</h5>
-                      <div id="animation-covid-2"></div>
-                      <p>Desativamos metade dos aparelhos de cardio para manter uma distância segura entre os clientes.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class='card-covid'>
-                      <h5>Agende seu Horário</h5>
-                      <div id="animation-covid-3"></div>
-                      <p>Vamos evitar aglomeração. Antes de ir à academia agende seu horário aqui.</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class='card-covid'>
-                      <h5>Termômetro digital</h5>
-                      <div id="animation-covid-4"></div>
-                      <p>Vamos medir sua temperatura na recepção. Se estiver acima de 37.8º C volte para casa por favor.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class='card-covid'>
-                      <h5>Uso de máscaras</h5>
-                      <div id="animation-covid-5"></div>
-                      <p>A máscara é obrigatória. Toda nossa equipe usará máscaras assim como os alunos.</p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class='card-covid'>
-                      <h5>Tapetes de higienização</h5>
-                      <div id="animation-covid-6"></div>
-                      <p>Temos tapetes na entrada para você higienizar seus tênis.</p>
-                    </div>
-                  </div>
-
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-
-            </div>
-
-            <div class="d-flex flex-1 flex-column mt-4 padding-default">
-
-              <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
-                <h1 class="display-4 text-center text-dark"><strong class="title-down-line">Cuidados</strong> Básicos
-                </h1>
-              </div>
-
-              <div class="row text-center m-auto padding-default-70">
-
-                <div class="col-sm-6 col-lg-4 p-4">
-
-                  <h3 class="mb-2" style="font-weight: 200;">Use <strong
-                      class="font-weight-bold primary-text-color">Máscara</strong></h3>
-                  <p class="padding-default-10">É obrigatório usar máscara. Cubra o nariz,
-                    boca e queixo para evitar as gotículas de
-                    salsa </p>
-                </div>
-                <div class="col-sm-6 col-lg-4 p-4">
-
-                  <h3 class="mb-2" style="font-weight: 200;">Leve <strong class="font-weight-bold primary-text-color">
-                      Água</strong></h3>
-                  <p class="padding-default-10">Não se esqueça da garrafinha com água nem todas as cidades tem liberação
-                    para usar bebedouro</p>
-                </div>
-                <div class="col-sm-6 col-lg-4 p-4">
-
-                  <h3 class="mb-2" style="font-weight: 200;">Álcool a <strong
-                      class="font-weight-bold primary-text-color">70%</strong></h3>
-
-                  <p class="padding-default-10">Temos álcool a 70% em todas as áreas da academia para você</p>
-
-                </div>
+              <div class="d-flex flex-1 flex-column mt-4 padding-default" id="Covid">
 
 
                 <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
-                  <div class="d-flex justify-content-center align-items-center">
-                    <span class="input-group-append">
-                      <button type="button" class="btn btn-primary btn-know-more">Saiba mais</button>
-                    </span>
+                  <h1 class="display-4 text-center">Vamos vencer a <span
+                      style="color: #FBBA00;font-weight: 600;">COVID-19</span></h1>
+                  <div class="lead text-muted pb-3 mt-4 mb-5">
+                    Precisamos da sua ajuda. Só assim, vamos conseguir deixar a Smart Fit um lugar mais seguro para
+                    todos.
                   </div>
+                </div>
+
+                <!-- Multiple slides -->
+                <div class="swiper-container" id="swiper-multiple-slides">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class='card-covid'>
+                        <h5>Desinfecção Completa</h5>
+                        <div id="animation-covid-1"></div>
+                        <p>Desinfectamos todas as academias com aparelho nebulizador de 2 a 3 vezes por dia.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class='card-covid'>
+                        <h5>Distância entre Aparelhos</h5>
+                        <div id="animation-covid-2"></div>
+                        <p>Desativamos metade dos aparelhos de cardio para manter uma distância segura entre os
+                          clientes.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class='card-covid'>
+                        <h5>Agende seu Horário</h5>
+                        <div id="animation-covid-3"></div>
+                        <p>Vamos evitar aglomeração. Antes de ir à academia agende seu horário aqui.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class='card-covid'>
+                        <h5>Termômetro digital</h5>
+                        <div id="animation-covid-4"></div>
+                        <p>Vamos medir sua temperatura na recepção. Se estiver acima de 37.8º C volte para casa por
+                          favor.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class='card-covid'>
+                        <h5>Uso de máscaras</h5>
+                        <div id="animation-covid-5"></div>
+                        <p>A máscara é obrigatória. Toda nossa equipe usará máscaras assim como os alunos.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class='card-covid'>
+                        <h5>Tapetes de higienização</h5>
+                        <div id="animation-covid-6"></div>
+                        <p>Temos tapetes na entrada para você higienizar seus tênis.</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="swiper-pagination"></div>
                 </div>
 
               </div>
 
+              <div class="d-flex flex-1 flex-column mt-4 padding-default">
 
+                <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
+                  <h1 class="display-4 text-center text-white"><strong class="title-down-line">Cuidados</strong> Básicos
+                  </h1>
+                </div>
+
+                <div class="row text-center m-auto padding-default-70">
+
+                  <div class="col-sm-6 col-lg-4 p-4">
+
+                    <h3 class="mb-2" style="font-weight: 200;">Use <strong
+                        class="font-weight-bold primary-text-color">Máscara</strong></h3>
+                    <p class="padding-default-10">É obrigatório usar máscara. Cubra o nariz,
+                      boca e queixo para evitar as gotículas de
+                      salsa </p>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 p-4">
+
+                    <h3 class="mb-2" style="font-weight: 200;">Leve <strong class="font-weight-bold primary-text-color">
+                        Água</strong></h3>
+                    <p class="padding-default-10">Não se esqueça da garrafinha com água nem todas as cidades tem
+                      liberação
+                      para usar bebedouro</p>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 p-4">
+
+                    <h3 class="mb-2" style="font-weight: 200;">Álcool a <strong
+                        class="font-weight-bold primary-text-color">70%</strong></h3>
+
+                    <p class="padding-default-10">Temos álcool a 70% em todas as áreas da academia para você</p>
+
+                  </div>
+
+
+                  <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <span class="input-group-append">
+                        <button type="button" class="btn btn-primary btn-know-more"><span style="color: #000;">Saiba
+                            mais</span></button>
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+
+
+              </div>
 
             </div>
 
-          </section>
+
+            <!-- Fale Conosco -->
 
 
-          <!-- Fale Conosco -->
+            <div class="container flex-grow-1 container-p-y" id="SAC">
+              <div class="container row padding-default-bottom-top-dif">
+                <div class='col-12 col-lg-6 d-block' style="padding: 20px !important;">
 
+                  <div style="width: 100%; height: 100%;">
+                    <img src="./assets/img/smartfit-fale-conosco.png" style="width: 100%;">
+                  </div>
 
-          <section class="container flex-grow-1 container-p-y" id="SAC">
-            <div class="container row padding-default-bottom-top-dif">
-              <div class='col-12 col-lg-6 d-block' style="padding: 20px !important;">
-
-                <div style="width: 100%; height: 100%;">
-                  <img src="./assets/img/smartfit-fale-conosco.png" style="width: 100%;">
                 </div>
+                <div class='col-12 col-lg-6 d-lg-block'>
+                  <h1 class="display-4 title-down-line-2"><strong>Fale conosco</strong></h1>
 
-              </div>
-              <div class='col-12 col-lg-6 d-lg-block'>
-                <h1 class="display-4 title-down-line-2"><strong>Fale conosco</strong></h1>
+                  <div class="lead text-muted pb-3 mt-4 mb-5">
+                    Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet
+                  </div>
 
-                <div class="lead text-muted pb-3 mt-4 mb-5">
-                  Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet
+                  <form id="validation-form-1" action='post'>
+                    <div class="form-group">
+                      <input type="text" class="form-control nome form-adjust" name="validation-name"
+                        placeholder="Nome completo">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control cpf" name="validation-cpf" placeholder="CPF"
+                        style="border: 1px solid #D1D1D1; padding: 10px; border-radius: 0px;padding: 25px;">
+                    </div>
+
+                    <div class="form-group">
+                      <input type="email" class="form-control form-adjust" name="validation-email" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                      <input type="phone" class="form-control form-adjust phone_with_ddd" name="validation-phone"
+                        placeholder="Celular">
+                    </div>
+
+                    <div class="form-group">
+                      <select class="selectpicker" title="Qual a unidade?" name="validation-unidade" data-width="100%">
+                        <option>A</option>
+                        <option>B</option>
+                      </select>
+
+                    </div>
+                    <div class="form-group">
+                      <select class="selectpicker" title="Já é aluno da Smart Fit?" name="validation-aluno"
+                        data-width="100%">
+                        <option>Sim</option>
+                        <option>Não</option>
+                      </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+                      <select class="selectpicker" title="Qual o assunto?" name="validation-subject" data-width="100%">
+                        <option selected hidden disabled>Mustard</option>
+                        <option>A</option>
+                        <option>B</option>
+                      </select>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+                      <textarea draggable="false" name="" id="" name="validation-message" cols="30" rows="7"
+                        class="form-control messagem" placeholder="Mensagem"
+                        style="border: 1px solid #D1D1D1; padding: 10px; border-radius: 0px;padding: 15px; resize: none;"></textarea>
+                    </div>
+
+
+
+                    <div class="d-flex justify-content-end align-items-end">
+                      <span class="input-group-append">
+                        <button type="submit" class="btn btn-primary btn-know-more">
+                          <span style="color: #000;">Enviar
+                          </span></button>
+                      </span>
+                    </div>
+                  </form>
+
                 </div>
-
-                <form id="validation-form-1" action='post'>
-                  <div class="form-group">
-                    <input type="text" class="form-control nome form-adjust" name="validation-name"
-                      placeholder="Nome completo">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control cpf" name="validation-cpf" placeholder="CPF"
-                      style="border: 1px solid #D1D1D1; padding: 10px; border-radius: 0px;padding: 25px;">
-                  </div>
-
-                  <div class="form-group">
-                    <input type="email" class="form-control form-adjust" name="validation-email" placeholder="Email">
-                  </div>
-
-                  <div class="form-group">
-                    <input type="phone" class="form-control form-adjust phone_with_ddd" name="validation-phone"
-                      placeholder="Celular">
-                  </div>
-
-                  <div class="form-group">
-                    <select class="selectpicker" title="Qual a unidade?" name="validation-unidade" data-width="100%">
-                      <option>A</option>
-                      <option>B</option>
-                    </select>
-
-                  </div>
-                  <div class="form-group">
-                    <select class="selectpicker" title="Já é aluno da Smart Fit?" name="validation-aluno"
-                      data-width="100%">
-                      <option>Sim</option>
-                      <option>Não</option>
-                    </select>
-
-                  </div>
-
-
-                  <div class="form-group">
-                    <select class="selectpicker" title="Qual o assunto?" name="validation-subject" data-width="100%">
-                      <option selected hidden disabled>Mustard</option>
-                      <option>A</option>
-                      <option>B</option>
-                    </select>
-
-                  </div>
-
-
-
-                  <div class="form-group">
-                    <textarea draggable="false" name="" id="" name="validation-message" cols="30" rows="7"
-                      class="form-control messagem" placeholder="Mensagem"
-                      style="border: 1px solid #D1D1D1; padding: 10px; border-radius: 0px;padding: 15px; resize: none;"></textarea>
-                  </div>
-
-
-
-                  <div class="d-flex justify-content-end align-items-end">
-                    <span class="input-group-append">
-                      <button type="submit" class="btn btn-primary btn-know-more">Enviar</button>
-                    </span>
-                  </div>
-                </form>
-
               </div>
+
             </div>
-
           </section>
-
 
           <!-- Footer -->
           <footer class="bg-all-black text-center text-white" style="min-height:400px;">
