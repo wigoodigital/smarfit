@@ -38,6 +38,18 @@
   <script src="assets/vendor/js/material-ripple.js"></script>
   <script src="assets/vendor/js/layout-helpers.js"></script>
 
+
+  <!-- Theme settings -->
+  <!-- This file MUST be included after core stylesheets and layout-helpers.js in the <head> section -->
+  <!-- <script src="assets/vendor/js/theme-settings.js"></script>
+  <script>
+    window.themeSettings = new ThemeSettings({
+      cssPath: 'assets/vendor/css/',
+      themesPath: 'assets/vendor/css/'
+    });
+  </script> -->
+
+
   <!-- Core scripts -->
   <script src="assets/vendor/js/pace.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -189,117 +201,76 @@
                     </h4>
                     <p class='pt-5'><strong>Treinos online, consultoria com professores e nutricionistas</strong> via
                       videochamada, além de mais de <strong>900 unidades</strong> na América Latina!</p>
-                    <div class='cards-smartfit'>
-                      <div class='swiper-container swiper-smartfit'>
-                        <div class='swiper-wrapper'>
-                          <div class='swiper-slide'>
-                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                              <span class='smartfit-card-title'>Smart Fit GO</span>
-                              <img src='./assets/img/cta-01.webp'>
-                              <span class='cta-mark'>Exclusivo para clientes</span>
-                              <div
-                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                                <h5>Um treino novo todos os dias!</h5>
-                                <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e
-                                    quando
-                                    quiser.</strong></p>
-                                <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                      <div class='cards-smartfit'>
+                        <div class='swiper-container swiper-smartfit'>
+                          <div class='swiper-wrapper'>
+                            <div class='swiper-slide'>
+                              <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
+                                <span class='smartfit-card-title'>Smart Fit GO</span>
+                                <img src='./assets/img/cta/cta-01.webp'>
+                                <span class='cta-mark'>Exclusivo para clientes</span>
+                                <div
+                                  class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
+                                  <h5>Um treino novo todos os dias!</h5>
+                                  <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e quando
+                                      quiser.</strong></p>
+                                  <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class='swiper-slide'>
-                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                              <span class='smartfit-card-title'>Smart Fit GO</span>
-                              <img src='./assets/img/cta-01.webp'>
-                              <span class='cta-mark'>Exclusivo para clientes</span>
-                              <div
-                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                                <h5>Um treino novo todos os dias!</h5>
-                                <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e
-                                    quando
-                                    quiser.</strong></p>
-                                <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                            <div class='swiper-slide'>
+                              <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
+                                <span class='smartfit-card-title'>Smart Fit Class</span>
+                                <img src='./assets/img/cta/cta-02.webp'>
+                                <span class='cta-mark'>Exclusivo para clientes</span>
+                                <div
+                                  class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
+                                  <h5>Aulas coletivas mesmo dentro de casa</h5>
+                                  <p><strong>Aproveite FitDance, Zumba, Abdominal e Alongamento</strong> por chamada de vídeo, com a mesma interação do presencial.</p>
+                                  <a class='btn btn-cta' href='#'>
+                                    Agendar atendimento</a>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class='swiper-slide'>
-                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                              <span class='smartfit-card-title'>Smart Fit GO</span>
-                              <img src='./assets/img/cta-01.webp'>
-                              <span class='cta-mark'>Exclusivo para clientes</span>
-                              <div
-                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                                <h5>Um treino novo todos os dias!</h5>
-                                <p>O melhor da sua academia na sua casa! Aproveite suas aulas online onde e quando
-                                  quiser.
-                                </p>
-                                <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                            <div class='swiper-slide'>
+                              <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
+                                <span class='smartfit-card-title'>Smart Fit Coach</span>
+                                <img src='./assets/img/cta/cta-03.webp'>
+                                <span class='cta-mark d-flex justify-content-center align-items-center text-left flex-column'>+R$29,90 /mês
+                                  <span style='font-size:0.6em'>*Permanência: 3 meses</span></span>
+                                <div
+                                  class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
+                                  <h5>Sua consultoria online de treinos</h5>
+                                  <p>Tenha mais motivação e ajuste sua rotina com um <strong>professor sempre por
+                                      perto.</strong>
+                                  </p>
+                                  <a class='btn btn-cta' href='#'>
+                                    Reservar aula</a>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class='swiper-slide'>
-                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                              <span class='smartfit-card-title'>Smart Fit GO</span>
-                              <img src='./assets/img/cta-01.webp'>
-                              <span class='cta-mark'>Exclusivo para clientes</span>
-                              <div
-                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                                <h5>Um treino novo todos os dias!</h5>
-                                <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e
-                                    quando
-                                    quiser.</strong></p>
-                                <a class='btn btn-cta' href='#'>Inscrever-se</a>
+                            <div class='swiper-slide'>
+                              <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
+                                <span class='smartfit-card-title'>Smart Fit Nutri</span>
+                                <img src='./assets/img/cta/cta-04.webp'>
+                                <span class='cta-mark d-flex justify-content-center align-items-center text-left flex-column'>+R$19,90 /mês
+                                  <span style='font-size:0.6em'>*Permanência: 12 meses</span></span>
+                                <div
+                                  class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
+                                  <h5>Equipe de nutricionista a um clique</h5>
+                                  <p>Mude sua alimentação com cardápios e receitas saudáveis <strong>+ 2 consultas
+                                      online.</strong></p>
+                                  <a class='btn btn-cta' href='#'>
+                                    Baixar Agora</a>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class='swiper-slide'>
-                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                              <span class='smartfit-card-title'>Smart Fit GO</span>
-                              <img src='./assets/img/cta-01.webp'>
-                              <span class='cta-mark'>Exclusivo para clientes</span>
-                              <div
-                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                                <h5>Um treino novo todos os dias!</h5>
-                                <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e
-                                    quando
-                                    quiser.</strong></p>
-                                <a class='btn btn-cta' href='#'>Inscrever-se</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class='swiper-slide'>
-                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                              <span class='smartfit-card-title'>Smart Fit GO</span>
-                              <img src='./assets/img/cta-01.webp'>
-                              <span class='cta-mark'>Exclusivo para clientes</span>
-                              <div
-                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                                <h5>Um treino novo todos os dias!</h5>
-                                <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e
-                                    quando
-                                    quiser.</strong></p>
-                                <a class='btn btn-cta' href='#'>Inscrever-se</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class='swiper-slide'>
-                            <div class='card-smartfit-cta d-flex justify-content-start align-items-center flex-column'>
-                              <span class='smartfit-card-title'>Smart Fit GO</span>
-                              <img src='./assets/img/cta-01.webp'>
-                              <span class='cta-mark'>Exclusivo para clientes</span>
-                              <div
-                                class='cta-textarea d-flex flex-1 flex-column justify-content-center align-items-center text-center p-3'>
-                                <h5>Um treino novo todos os dias!</h5>
-                                <p>O melhor da sua academia na sua casa! Aproveite suas aulas online <strong>onde e
-                                    quando
-                                    quiser.</strong></p>
-                                <a class='btn btn-cta' href='#'>Inscrever-se</a>
-                              </div>
-                            </div>
+    
+    
+    
                           </div>
                         </div>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -1258,6 +1229,14 @@
       //   clickable: true
       // },
       breakpoints: {
+        320: {
+          slidesPerView: 0.8,
+          spaceBetween: 10,
+        },
+        468: {
+          slidesPerView: 1.1,
+          spaceBetween: 10,
+        },
         768: {
           slidesPerView: 1.4,
           spaceBetween: 10,
