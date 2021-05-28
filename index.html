@@ -851,7 +851,7 @@
               <div class='col-12 col-lg-6 d-lg-block wow fadeInRight' data-wow-duration="1s">
                 <h1 class="display-4 title-down-line-2"><strong>Fale conosco</strong></h1>
 
-                <div class="lead text-muted pb-3 mt-4 mb-5">
+                <div class="lead text-muted pb-3 mt-4 mb-3">
                   Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet
                 </div>
 
@@ -861,7 +861,7 @@
                       placeholder="Nome completo">
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control cpf" name="validation-cpf" placeholder="CPF"
+                    <input type="text" class="form-control cpf form-adjust" name="validation-cpf" placeholder="CPF"
                       style="border: 1px solid #D1D1D1; padding: 10px; border-radius: 0px;padding: 25px;">
                   </div>
 
@@ -875,23 +875,42 @@
                   </div>
 
                   <div class="form-group">
-                    <select class="selectpicker" title="Qual a unidade?" name="validation-unidade" data-width="100%">
+                    <!-- <select class="selectpicker" title="Qual a unidade?" name="validation-unidade" data-width="100%">
                       <option>A</option>
                       <option>B</option>
+                    </select> -->
+
+                    <select class="custom-select custom-select-lg form-adjust" title="Qual a unidade?" name="validation-unidade">
+                      <option>Qual a unidade?</option>
+                      <option>One</option>
+                      <option>Two</option>
+                      <option>Three</option>
                     </select>
 
                   </div>
                   <div class="form-group">
-                    <select class="selectpicker" title="Já é aluno da Smart Fit?" name="validation-aluno"
+                    <!-- <select class="selectpicker" title="Já é aluno da Smart Fit?" name="validation-aluno"
                       data-width="100%">
+                      <option>Sim</option>
+                      <option>Não</option>
+                    </select> -->
+
+                    <select class="custom-select custom-select-lg form-adjust" title="Já é aluno?" name="validation-aluno">
+                      <option>Já é aluno?</option>
                       <option>Sim</option>
                       <option>Não</option>
                     </select>
                   </div>
 
                   <div class="form-group">
-                    <select class="selectpicker" title="Qual o assunto?" name="validation-subject" data-width="100%">
+                    <!-- <select class="selectpicker" title="Qual o assunto?" name="validation-subject" data-width="100%">
                       <option selected hidden disabled>Mustard</option>
+                      <option>A</option>
+                      <option>B</option>
+                    </select> -->
+
+                    <select class="custom-select custom-select-lg form-adjust" title="Qual o assunto?" name="validation-subject">
+                      <option>Qual o assunto?</option>
                       <option>A</option>
                       <option>B</option>
                     </select>
@@ -901,7 +920,7 @@
 
 
                   <div class="form-group">
-                    <textarea draggable="false" name="" id="" name="validation-message" cols="30" rows="7"
+                    <textarea draggable="false" name="" id="" name="validation-message" class="form-adjust" cols="30" rows="7"
                       class="form-control messagem" placeholder="Mensagem"
                       style="border: 1px solid #D1D1D1; padding: 10px; border-radius: 0px;padding: 15px; resize: none;"></textarea>
                   </div>

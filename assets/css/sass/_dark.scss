@@ -162,6 +162,12 @@ body.dark{
     }  
     
     .form-adjust {
-      border-color: #D1D1D1 !important;    
+      border-color: transparent !important;    
+      background-color: $color-dark-bg-soft;
+      color: #fff !important;
+    }
+
+    select.form-adjust {        
+        color: #c5c6c6;
     }
   }
