@@ -1,5 +1,13 @@
 .light{  
 
+  .img-banner {
+      background-image: url("../img/banner-light.png");
+  }
+  
+  .brand-img{
+      background-image: url("../img/logo.svg");
+  }
+
   .bg-theme{
       background-color: $color-light-theme;
       //background-color: $color-primary;

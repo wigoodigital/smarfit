@@ -2,6 +2,24 @@ html {
     scroll-behavior: smooth;
 }
 
+.img-banner {
+    width: 100%;
+    min-height: 550px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.brand-img{
+    width: 100%;
+    min-height: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
 .bg-primary {
     background-color: $color-primary !important;
 }
