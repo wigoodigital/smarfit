@@ -1343,19 +1343,40 @@
 
   </script>
 
+
+  <!-- Dark mode settings -->
   <script>
 
     $(document).ready(function () {
 
 
+      function changeMode( option ){
+        if( option ) {          
+          $("body").removeClass("light");
+          $("body").addClass("dark");
+        } else {          
+          $("body").removeClass("dark");
+          $("body").addClass("light");
+        }
+      }
+
+      //Verify Hour
+      var date = new Date;      
+      var hour = date.getHours();      
+
+      if(hour >= 6 && hour < 18){        
+        changeMode(false);        
+      } else{
+        $( ".switcher-input" ).trigger("click"); 
+        changeMode(true);  
+      }
+
       $( ".switcher-input" ).change(function(e) {
         console.log( $(e.target) );        
         if( $(e.target).is(':checked') ) {
-          $("body").removeClass("light");
-          $("body").addClass("dark");
+          changeMode(true);          
         } else {
-          $("body").removeClass("dark");
-          $("body").addClass("light");
+          changeMode(false);
         }
       });
 
