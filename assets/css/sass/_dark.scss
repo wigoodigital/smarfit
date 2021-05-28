@@ -94,8 +94,17 @@ body.dark{
     }
     
     .card-smartfit-cta{
-      background:#FFF;
-      border-color: #f1f1f1;    
+      background:#202020; 
+      border-color: #202020; 
+
+      .smartfit-card-title{    
+        color: $color-dark-font-bg-white;    
+        background-color: $color-primary;
+      }
+
+      p {
+        color: $color-dark-font-bg-dark;
+      }
     }  
     
     
@@ -103,14 +112,8 @@ body.dark{
       color:#202020; 
       background-color:$color-primary;
     }
-    .card-smartfit-cta .smartfit-card-title{    
-      color:#FFF;    
-      background-color:#202020;
-    }
     
-    .card-smartfit-cta p{    
-      color:#000;    
-    }
+    
     
     
     .box-app-download:after {    
