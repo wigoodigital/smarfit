@@ -85,8 +85,8 @@
 
 </head>
 
-<!-- <body class="light"> -->
-<body class="dark">
+<body class="light">
+<!-- <body class="dark"> -->
 
   <div class="page-loader">
     <div class="bg-primary"></div>
@@ -114,7 +114,7 @@
 
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".header-13">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".header-13">
               <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -124,9 +124,22 @@
                 <a class="nav-item nav-link" href="#App">BAIXAR APLICATIVO</a>
                 <a class="nav-item nav-link" href="#Covid">COVID-19</a>
                 <a class="nav-item nav-link" href="#Duvidas">DUVIDAS FREQUENTES</a>
+                <a class="nav-item nav-link" href="#Sac">SAC</a>
+                
               </div>
             </div>
 
+          </div>
+
+          <div class="switcher-group">
+            <label class="switcher">
+              <input type="checkbox" class="switcher-input">
+              <span class="switcher-indicator">
+                <span class="switcher-yes"></span>
+                <span class="switcher-no"></span>
+              </span>
+              <span class="switcher-label">Modo noturno</span>
+            </label>
           </div>
         </nav>
         <!-- / Layout navbar -->
@@ -1327,6 +1340,38 @@
       $('.nome').mask('Z', { translation: { 'Z': { pattern: /[a-zA-Z ]/, recursive: true } } });
     });
 
+
+  </script>
+
+  <script>
+
+    $(document).ready(function () {
+
+
+      $( ".switcher-input" ).change(function(e) {
+        console.log( $(e.target) );        
+        if( $(e.target).is(':checked') ) {
+          $("body").removeClass("light");
+          $("body").addClass("dark");
+        } else {
+          $("body").removeClass("dark");
+          $("body").addClass("light");
+        }
+      });
+
+      if($( window ).width() <= 768){
+        $( "button.navbar-toggler" ).click(function() {     
+        
+          if( $( this ).hasClass( "collapsed" ) ) {            
+            $( ".switcher-group" ).css( "display", "block" );            
+          } else {
+            $( ".switcher-group" ).css( "display", "none" );                 
+          }
+          
+        });
+      }
+      
+    });
 
   </script>
 
