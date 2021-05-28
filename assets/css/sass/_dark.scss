@@ -10,6 +10,16 @@ body.dark{
         }
     }
 
+    .collapse-icon::after {
+      border-color: $color-dark-font-bg-dark;
+    }
+
+    .text-body {
+      color: $color-dark-font-bg-dark !important;
+    }
+
+
+
     .bg-theme{
         background-color: $color-dark-theme;        
     }
@@ -24,8 +34,13 @@ body.dark{
     }
     
     .btn-know-more {
-      background-color: #202020 !important;    
-      color:#FFF !important;    
+      background: $color-white !important;   
+      color: $color-dark-font-bg-white !important
+    }
+
+    .btn-know-more:hover {
+      background: $color-primary !important;    
+      color: $color-dark-font-bg-white !important
     }
     
     .btn-know-more::before {    
