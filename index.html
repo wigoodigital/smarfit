@@ -120,11 +120,11 @@
 
             <div class="header-13 navbar-collapse collapse flex-shrink-0">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active-line active" href="#">CONHEÇA A SMART FIT</a>
+                <a class="nav-item nav-link active-line active" href="#">A SMART FIT</a>
                 <a class="nav-item nav-link" href="#App">BAIXAR APLICATIVO</a>
                 <a class="nav-item nav-link" href="#Covid">COVID-19</a>
                 <a class="nav-item nav-link" href="#Duvidas">DUVIDAS FREQUENTES</a>
-                <a class="nav-item nav-link" href="#Sac">SAC</a>
+                <a class="nav-item nav-link" href="#SAC">SAC</a>
                 
               </div>
             </div>
@@ -149,11 +149,11 @@
 
           <!-- Banner Principal -->
           <section>
-            <img class='smartfit-bg wow fadeInLeft d-none d-sm-block' data-wow-duration='1s'
+            <img class='smartfit-bg wow fadeInLeft d-sm-block' data-wow-duration='1s'
               src='./assets/img/smartfit-bg.png'>
             <div class='container wow fadeIn' data-wow-duration='1s'>
               <div class="d-flex flex-1 flex-row  flex-wrap-reverse justify-content-center align-items-center"
-                style='min-height:90vh;'>
+                style='min-height:70vh;'>
                 <div class='col-12 col-lg-6 d-block'>
                   <div class='d-flex flex-1 flex-column p-0 m-0 justify-content-center text-center align-items-center'>
 
@@ -163,6 +163,7 @@
 
                     <!-- <img width='95%' class='mt-5 mb-5' src='./assets/img/logo.svg'> -->
                     <div id="motionLogo-light" class="animation" style="height: 350px;"></div>
+                    <div id="motionLogo-dark" class="animation d-none" style="height: 350px;"></div>
 
                     <div class='btn-faq-container'>
                       <a class='btn-faq' href='#Duvidas'><span>TIRE SUAS DÚVIDAS</span></a>
@@ -171,9 +172,9 @@
                   </div>
 
                 </div>
-                <div class='col-12 col-lg-6 d-lg-block d-none'>
+                <div class='col-12 col-lg-6 d-lg-block'>
                   <div class='d-flex flex-1 flex-column justify-content-center align-items-center'>                    
-                    <div class="img-banner"></div>
+                    <div class="img-banner"></div>                    
                   </div>
                 </div>
 
@@ -185,7 +186,7 @@
           </section>
 
           <!-- Baixe o App -->
-          <section class='bg-soft' style='min-height:85vh;' id="App">
+          <section class='bg-soft padding-default' style='min-height:85vh;' id="App">
             <div class="container flex-grow-1 container-p-y">
               <div class='d-flex flex-1 flex-row flex-wrap justify-content-center align-items-center'>
                 <div class='col-12 col-md-6 wow fadeInLeft' data-wow-duration="0.5s">
@@ -680,7 +681,7 @@
 
             <div class="container flex-grow-1 container-p-y">
 
-              <div class="d-flex flex-1 flex-column mt-4 padding-default">
+              <div class="d-flex flex-1 flex-column padding-default">
 
                 <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto wow fadeInUp" data-wow-duration="1s">
                   <h1 class="display-4 text-center">Vamos vencer a <span
@@ -772,7 +773,7 @@
 
 
 
-                <div class="d-flex flex-1 flex-column mt-4 padding-default">
+                <div class="d-flex flex-1 flex-column mt-4 padding-default" style="padding-bottom: 0;">
 
                   <div class="col-md-10 col-lg-8 col-xl-7 text-center p-0 mx-auto wow fadeInUp"
                     data-wow-duration="0.5s">
@@ -780,7 +781,7 @@
                     </h1>
                   </div>
 
-                  <div class="row text-center m-auto padding-default-70 wow fadeInDown" data-wow-duration="0.5s">
+                  <div class="row text-center m-auto wow fadeInDown" data-wow-duration="0.5s">
 
 
 
@@ -1133,13 +1134,21 @@
         viewBoxSize: '180 90 720 720'
       },
       path: 'assets/animation/light/data.json'
-      //path: 'assets/animation/dark/data.json'
-      //path: 'assets/animation/covid/1/data.json'
-      //path: 'assets/animation/covid/2/data.json'
-      //path: 'assets/animation/covid/3/data.json'
-      //path: 'assets/animation/covid/4/data.json'
-      //path: 'assets/animation/covid/5/data.json'
-      //path: 'assets/animation/covid/6/data.json'
+    });
+    
+    var logoDark = document.getElementById('motionLogo-dark');
+    var animationLogoDark = lottie.loadAnimation({
+      container: logoDark,
+      renderer: 'svg',
+      //renderer: 'html',
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        progressiveLoad: false,
+        preserveAspectRatio: 'xMaxYMax slice',
+        viewBoxSize: '180 90 720 720'
+      },      
+      path: 'assets/animation/dark/data.json'      
     });
 
     var covid1 = document.getElementById('animation-covid-1');
@@ -1354,9 +1363,17 @@
         if( option ) {          
           $("body").removeClass("light");
           $("body").addClass("dark");
+          
+          $("#motionLogo-dark").removeClass("d-none");
+          $("#motionLogo-light").addClass("d-none");
+          
+          
         } else {          
           $("body").removeClass("dark");
           $("body").addClass("light");
+
+          $("#motionLogo-light").removeClass("d-none");
+          $("#motionLogo-dark").addClass("d-none");
         }
       }
 

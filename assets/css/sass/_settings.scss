@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.d-none {
+    display: none !important;
+}
+
 .img-banner {
     width: 100%;
     min-height: 550px;
@@ -117,8 +121,8 @@ a:hover {
 }
 
 .padding-default {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .padding-default-10 {
