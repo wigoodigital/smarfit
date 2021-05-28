@@ -6,6 +6,10 @@ html {
     display: none !important;
 }
 
+.animation {
+    height: 350px;
+}
+
 .img-banner {
     width: 100%;
     min-height: 550px;
@@ -54,11 +58,31 @@ html {
 
 }
 
+.box-app-download{
+    padding: 4rem !important;
+}
+
 
 @media (max-width: 768px) {
 
-    .switcher-group{
+    .switcher-group {
         display: none;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .d-none-sm {
+        display: none !important;
+    }
+
+    .animation {
+        height: 250px;
+    }
+
+    .box-app-download{
+        padding: 2rem !important;
     }
 
 }
