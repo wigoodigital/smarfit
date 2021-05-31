@@ -38,14 +38,11 @@ $(function() {
       },
       'validation-message': {
         required: true,
-        minlength: 50,
+        minlength: 10,
       },
       'validation-aluno': {
         required: true
-      },
-      'validation-message': {
-        required: true
-      },
+      },      
       'validation-cpf': {
         required: true,
         minlength:11,
